@@ -1,0 +1,201 @@
+JERRY J. CHEN - U.S. CITIZEN
+
+ADDRESS:
+
+  74-2 Wanlong Road, Floor 7
+  Taipei City, Taiwan (ROC), zip 11675
+  Tel. (+886) 2-866-37669, Cell. (+886) 926-832-058
+  Email: onlyuser@gmail.com <mailto:onlyuser@gmail.com>
+
+PROFESSIONAL OBJECTIVE:
+
+  R&D Product Development
+
+BACKGROUND:
+
+  EDA experience, parsing expertise, compiler front-end, HDL/CAD import/export,
+  2D/3D rendering engine, Linux/Windows OS
+
+EDUCATION
+
+ 2004 - 2006
+
+  NATIONAL TAIWAN UNIVERSITY                                     TAIPEI, TAIWAN
+  Master of Science in Computer Science and Information Engineering, June 2006.
+  Courses taken include Computing Theory, Natural Language Processing, Neural
+  Networks, Virtual Reality, Pattern Analysis and Classification, Algorithms
+  for Analyzing Biological Sequences, Advanced Topics in Learning and Vision
+
+  ** Thesis: "Path-Planning: Hybrid Ellipsoid aMAPRM using Adaptive Voronoi-
+  cuts"
+
+ 1999 - 2003
+
+  UNIVERSITY OF CALIFORNIA, IRVINE                              IRVINE, CA, USA
+  Bachelor of Science in Information and Computer Science, December 2003.
+  Courses taken include Discrete Math, Boolean Logic, Data Structures, Linear
+  Algebra, Computer Organization, Calculus, Physics, Software Engineering,
+  Programming Languages, 3D Geometry, Digital Logic Design, Artificial
+  Intelligence, Group Theory, Operating Systems, Computability, Computer System
+  Architecture, File & Database Management, Computer Networks, Design &
+  Analysis of Algorithms, Nonlinear Programming, Compilers & Interpreters,
+  Project in Artificial Intelligence, Linear Programming, Computer Game
+  Development
+
+  ** Made Dean's Honor List in Fall 1999, Spring 2003
+
+TECHNICAL SUMMARY:
+
+  C++ (Inc. STL), LexYacc / FlexBison / ANTLR / Boost Spirit, OpenGL, gdb/cgdb,
+  valgrind/kcachegrind, git, make/CMake, CUDA, Graphviz, bash, Eclipse CDT
+
+LANGUAGES:
+
+  Native bilingual proficiency for both English and Chinese
+
+EXPERIENCE:
+
+ 2012 - Present
+
+  SYNOPSYS                                                       TAIPEI, TAIWAN
+  Develop EDA (Electronic Design Automation) CAD software as R&D Engineer for
+  IG department. Coding done on Linux using C/C++. Work with gcc, gdb.
+  http://www.synopsys.com/
+
+ March 2010 - December 2011
+
+  ZILLIANS                                                       TAIPEI, TAIWAN
+  Develop ECMAScript cross-compiler toolchain for GPU-based MMO game server as
+  partner in startup. Responsible for language design, compiler front-end,
+  semantic check, C++ name-mangling, language built-in ADT datatypes (string,
+  array, map), Doxygen custom language support. Implement PTX parser for LLVM
+  compiler backend retooling. Implement GPU space partitioning / event
+  scheduling for game service framework. Coding done on Linux using C++, CUDA,
+  ANTLR, Boost Spirit. Work with CUDA Profiler, gcc/nvcc, cgdb, valgrind/
+  kcachegrind, Graphviz, Eclipse CDT, CMake, QT, Doxygen.
+  http://www.zillians.com/
+
+  ** Rewarded for submitting provisional patent application (as co-inventor).
+  PPA: "Virtualization on a Parallel Processing Unit", US Patent No. 61,409,258
+
+ 2008 - 2010
+
+  SPRINGSOFT                                               SCIENCE PARK, TAIWAN
+  Developed EDA (Electronic Design Automation) CAD software as Engineer for R&D
+  department, ADP (Analog Design Platform) team. Rewrote from scratch new CDF
+  (Component Description Format) parser to facilitate product migration to
+  OpenAccess. Rewrote aging netlist name parser to support multi-dimension
+  Python-style array slicing, a more powerful syntax for bus expressions. Took
+  charge of integrating SPICE / EDIF / Verilog / AMS import-export flows into
+  product. Maintained legacy EDIF (Electronic Design Interchange Format)
+  parser. Participated in shipping ADP 2.1v3-2.1v5. Coding done on Linux using
+  C++, LexYacc. Worked with gcc, gdb/dbx, Rational Purify, Rational Quantify,
+  Visio.
+  http://www.springsoft.com/
+
+ 2007
+
+  TREND MICRO                                                    TAIPEI, TAIWAN
+  Developed antivirus software as Engineer for R&D department, Small-Medium-
+  Business division. Updated communications code in product "CSM OfficeScan"
+  from WinInet to WinHTTP. Collaborated with security architect to conduct
+  OfficeScan network protocol vulnerability survey. Participated in drafting
+  new architecture for OfficeScan restructuring. Ported InstallShield code in
+  product "SMEX (ScanMail for Exchange Server)" to IIS 6.0 for Windows Server
+  2003, to IIS 7.0 for Vista. Ported SMEX to 64-bit Vista. Coding done on
+  Windows using C++, STL. Worked with InstallShield, Ethereal packet sniffer.
+  http://us.trendmicro.com/us/home/
+
+  ** Rewarded for submitting patent application.
+  Patent: "SVM-based SSL certificate authentication without whitelists"
+
+ Spring 2006
+
+  VR PROJECT at NTU                                              TAIPEI, TAIWAN
+  Led team of 3 to design, implement, document 3D virtual reality game in under
+  6 weeks. Coding done on Windows using C#, OGRE 3D engine.
+  http://www.ntu.edu.tw/
+
+ Summer 2005
+
+  ROBOT COMPETITION at NTU                                       TAIPEI, TAIWAN
+  Participated in EE department competition and won 1st prize in "2005
+  International Student Project Competition via Internet on Intelligent
+  Mechatronics and Automation". Responsible for all higher-level robot control
+  software. Developed finite state AI, scriptable robot arm controller.
+  Designed "device-as-service" model where AI acting as client talks to device
+  controllers acting as server. Robot features pc104-based control unit,
+  differential turning, 5 DOF manipulator, CCD camera target acquisition,
+  ultrasonic obstacle detection, laser distance measuring, encoder
+  localization, Bluetooth remote software update. Coding done on Windows using
+  C++, Visual Basic, OpenGL.
+
+ 2004
+
+  APEX INTERNATIONAL                                             TAIPEI, TAIWAN
+  Developed financial software as Engineer for R&D department, Derivatives
+  Division. Implemented GUI applet for displaying stock charts, scrolling
+  marquees in derivatives pricing software. Implemented Java servelet for
+  serving XML stock quotations. Coding done on Windows using Java, Spring
+  Framework, C#, GDI+, OpenGL.
+  http://www.apex.com.tw/
+
+ Spring 2003
+
+  AI PROJECT at UCI                                             IRVINE, CA, USA
+  Partnered with teammate to design, implement, document perceptron-based
+  optical character recognition program. Coding done on Windows using C++,
+  Visual Basic.
+  http://www.uci.edu/
+
+ Fall 2002
+
+  GAME DEV PROJECT at UCI                                       IRVINE, CA, USA
+  Led team of 4 to design, implement, document 3D racing game in under 6 weeks.
+  Coding done on Windows using C++, OpenGL, FMOD.
+
+PORTFOLIO:
+
+  https://sites.google.com/site/onlyuser/projects
+
+PROJECTS:
+
+ 2010
+
+  Developed FlexBison tutorial on GitHub demonstrating various ways to build a
+  parser.
+  https://github.com/onlyuser/XLang
+
+ 2007
+
+  Developed benchmarking program to compare efficiency among SSE, TBB, OpenMP.
+
+ 2005
+
+  Developed LALR(1) parser-generator with backtracking conflict resolution,
+  Prolog interpreter, scientific graphing calculator.
+
+ 2004
+
+  Developed pattern analysis AI library with neural net classifier, k-means
+  cluster classifier.
+
+ 2003
+
+  Developed OpenGL 3D engine with multisample anti-aliasing, mip-mapped
+  textures, compiled vertex array, vertex buffer object, particle system, lens-
+  flare, height-mapped terrain, Autodesk 3D Studio format import/export.
+
+ 1999
+
+  Developed software rendering 3D engine used in Canadian Space Agency
+  polarimetry study "RADARSAT-2 radar survey mission".
+  http://airsar.jpl.nasa.gov/documents/workshop2002/papers/T5.pdf
+
+ 1996
+
+  Developed Othello game with UDP network support, minimax board evaluation AI.
+
+REFERENCES:
+
+  Available upon request

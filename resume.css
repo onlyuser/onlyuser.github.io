@@ -1,0 +1,15 @@
+body
+{
+background-color: #ffffff;
+}
+
+p, li, th, td
+{
+font-family: arial, 'sans serif';
+font-size: 12;
+}
+
+a:link    {color:black}
+a:visited {color:black}
+a:active  {color:mediumblue}
+a:hover   {color:mediumblue}
