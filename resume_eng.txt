@@ -59,7 +59,7 @@ EXPERIENCE:
 
   SYNOPSYS                                                       TAIPEI, TAIWAN
   Develop EDA (Electronic Design Automation) CAD software as R&D Engineer for
-  IG department. Coding done on Linux using C/C++. Work with gcc, gdb.
+  IG department. Coding done on Linux using C/C++. Work with gcc, gdb, tcl.
   http://www.synopsys.com/
 
  March 2010 - December 2011
