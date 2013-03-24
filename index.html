@@ -4,15 +4,99 @@
     <title>Jerry's GitHub home page</title>
 </head>
 
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script>
+    function get_gravatar(email, size) {
+        return 'http://www.gravatar.com/avatar/' + CryptoJS.MD5(email) + '.jpg?s=' + size;
+    }
+</script>
+
 <body>
     <p>Welcome to Jerry's GitHub home page!</p>
-    <p>Here are his <a href=https://github.com/onlyuser/>current projects</a>.</p>
-    <p>Here are his <a href=https://sites.google.com/site/onlyuser/projects>legacy projects</a>.</p>
-    <p>Here is his resume:</p>
+    <script>
+        document.write('<img src="' + get_gravatar('onlyuser@gmail.com', 100) + '" />');
+    </script>
+    <p><i>"INSERT FAVORITE QUOTE HERE!" -- INSERT PERSON QUOTED HERE!</i></p>
+    <hr>
+    <p><strong>About</strong></p>
+    <p>INSERT ABOUT CONTENT HERE!</p>
+    <p><strong>Current Projects</strong></p>
+    <table border="1">
+        <tr>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Readme</th>
+            <th>Repository</th>
+            <th>Issues</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
+        <tr>
+            <td>XLang</td>
+            <td>XLang is a parser framework for language modeling</td>
+            <td><a href=https://github.com/onlyuser/XLang#readme>readme</a></td>
+            <td><a href=https://github.com/onlyuser/XLang>GitHub</a></td>
+            <td><a href=https://github.com/onlyuser/XLang/issues>issues</a></td>
+            <td><img src="https://travis-ci.org/onlyuser/XLang.png?branch=master" alt="Build Status"></td>
+            <td><a href=https://github.com/onlyuser/XLang/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td>onlyuser.github.com</td>
+            <td>onlyuser.github.com is Jerry's GitHub home page</td>
+            <td><a href=https://github.com/onlyuser/onlyuser.github.com#readme>readme</a></td>
+            <td><a href=https://github.com/onlyuser/onlyuser.github.com>GitHub</a></td>
+            <td><a href=https://github.com/onlyuser/onlyuser.github.com/issues>issues</a></td>
+            <td>n/a</td>
+            <td><a href=https://github.com/onlyuser/onlyuser.github.com/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td>gnu-tools</td>
+            <td>gnu-tools is a collection of recipes for building gnu-tools from scratch</td>
+            <td><a href=https://github.com/onlyuser/gnu-tools#readme>readme</a></td>
+            <td><a href=https://github.com/onlyuser/gnu-tools>GitHub</a></td>
+            <td><a href=https://github.com/onlyuser/gnu-tools/issues>issues</a></td>
+            <td>n/a</td>
+            <td><a href=https://github.com/onlyuser/gnu-tools/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td>tor-exit-dl</td>
+            <td>tor-exit-dl is a bash script for finding Tor exit nodes</td>
+            <td><a href=https://github.com/onlyuser/tor-exit-dl#readme>readme</a></td>
+            <td><a href=https://github.com/onlyuser/tor-exit-dl>GitHub</a></td>
+            <td><a href=https://github.com/onlyuser/tor-exit-dl/issues>issues</a></td>
+            <td>n/a</td>
+            <td><a href=https://github.com/onlyuser/tor-exit-dl/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td>Sandbox</td>
+            <td>Sandbox is a collection of experimental code</td>
+            <td><a href=https://github.com/onlyuser/Sandbox#readme>readme</a></td>
+            <td><a href=https://github.com/onlyuser/Sandbox>GitHub</a></td>
+            <td><a href=https://github.com/onlyuser/Sandbox/issues>issues</a></td>
+            <td>n/a</td>
+            <td><a href=https://github.com/onlyuser/Sandbox/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td>sh</td>
+            <td>sh is a collection of handy shell scripts</td>
+            <td><a href=https://github.com/onlyuser/sh#readme>readme</a></td>
+            <td><a href=https://github.com/onlyuser/sh>GitHub</a></td>
+            <td><a href=https://github.com/onlyuser/sh/issues>issues</a></td>
+            <td>n/a</td>
+            <td><a href=https://github.com/onlyuser/sh/archive/master.zip>zip</a></td>
+        </tr>
+    </table>
+    <p><strong>Legacy Projects</strong></p>
+    <ul>
+        <li><a href=https://sites.google.com/site/onlyuser/projects>Google Sites</a></li>
+    </ul>
+    <p><strong>Resume</strong></p>
     <ul>
         <li><a href=resume_eng.txt>resume (txt)</a></li>
         <li><a href=resume_eng.html>resume (html)</a></li>
     </ul>
+    <hr>
+    <p>Copyright (C) 2011-2013 Jerry Chen</p>
     <p>Feel free to contact him <a href=mailto:onlyuser@gmail.com>here</a>.</p>
 </body>
 
