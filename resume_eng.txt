@@ -65,8 +65,8 @@ EXPERIENCE:
  March 2010 - December 2011
 
   ZILLIANS                                                       TAIPEI, TAIWAN
-  Develop ECMAScript cross-compiler toolchain for GPU-based MMO game server as
-  partner in startup. Responsible for language design, compiler front-end,
+  Developed ECMAScript cross-compiler toolchain for GPU-based MMO game server
+  as partner in startup. Responsible for language design, compiler front-end,
   semantic check, C++ name-mangling, language built-in ADT datatypes (string,
   array, map), Doxygen custom language support. Implement PTX parser for LLVM
   compiler backend retooling. Implement GPU space partitioning / event
