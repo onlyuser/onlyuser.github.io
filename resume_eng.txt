@@ -59,10 +59,11 @@ EXPERIENCE:
 
   SYNOPSYS                                                       TAIPEI, TAIWAN
   Develop EDA (Electronic Design Automation) CAD software as R&D Engineer for
-  IG department. Coding done on Linux using C/C++. Work with gcc, gdb, tcl.
+  IG department. Coding done on Linux using C/C++. Work with gcc, gdb, tcl,
+  CodeCollaborator, Coverity.
   http://www.synopsys.com/
 
- March 2010 - December 2011
+ 2010 - 2012
 
   ZILLIANS                                                       TAIPEI, TAIWAN
   Developed ECMAScript cross-compiler toolchain for GPU-based MMO game server
@@ -72,11 +73,8 @@ EXPERIENCE:
   compiler backend retooling. Implement GPU space partitioning / event
   scheduling for game service framework. Coding done on Linux using C++, CUDA,
   ANTLR, Boost Spirit. Work with CUDA Profiler, gcc/nvcc, cgdb, valgrind/
-  kcachegrind, Graphviz, Eclipse CDT, CMake, QT, Doxygen.
+  kcachegrind, Graphviz, Eclipse CDT, CMake, Doxygen.
   http://www.zillians.com/
-
-  ** Rewarded for submitting provisional patent application (as co-inventor).
-  PPA: "Virtualization on a Parallel Processing Unit", US Patent No. 61,409,258
 
  2008 - 2010
 
@@ -105,9 +103,6 @@ EXPERIENCE:
   2003, to IIS 7.0 for Vista. Ported SMEX to 64-bit Vista. Coding done on
   Windows using C++, STL. Worked with InstallShield, Ethereal packet sniffer.
   http://us.trendmicro.com/us/home/
-
-  ** Rewarded for submitting patent application.
-  Patent: "SVM-based SSL certificate authentication without whitelists"
 
  Spring 2006
 
