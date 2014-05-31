@@ -48,7 +48,7 @@ TECHNICAL SUMMARY:
 
   C++ (Inc. STL), LexYacc / FlexBison / ANTLR / Boost Spirit, OpenGL, glsl
   shader, glm, gdb/cgdb, valgrind/kcachegrind, git, make/CMake, CUDA, Graphviz,
-  bash, Eclipse CDT
+  bash, tcl, Eclipse CDT
 
 LANGUAGES:
 
