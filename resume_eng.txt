@@ -46,8 +46,9 @@ EDUCATION
 
 TECHNICAL SUMMARY:
 
-  C++ (Inc. STL), LexYacc / FlexBison / ANTLR / Boost Spirit, OpenGL, gdb/cgdb,
-  valgrind/kcachegrind, git, make/CMake, CUDA, Graphviz, bash, Eclipse CDT
+  C++ (Inc. STL), LexYacc / FlexBison / ANTLR / Boost Spirit, OpenGL, glsl
+  shader, glm, gdb/cgdb, valgrind/kcachegrind, git, make/CMake, CUDA, Graphviz,
+  bash, Eclipse CDT
 
 LANGUAGES:
 
@@ -154,6 +155,12 @@ PORTFOLIO:
   https://sites.google.com/site/onlyuser/projects
 
 PROJECTS:
+
+ 2014
+
+  Developed OpenGL 3D engine with glsl Phong shading, environment-mapped
+  reflection/refraction, normal-mapped textures, platonic primitives
+  generation.
 
  2010
 
