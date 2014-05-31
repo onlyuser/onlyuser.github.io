@@ -159,8 +159,8 @@ PROJECTS:
  2014
 
   Developed OpenGL 3D engine with glsl Phong shading, environment-mapped
-  reflection/refraction, normal-mapped textures, platonic primitives
-  generation.
+  reflection/refraction (with fresnel effect and chromatic dispersion),
+  normal-mapped textures, platonic primitives generation.
 
  2010
 
