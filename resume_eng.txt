@@ -158,9 +158,12 @@ PROJECTS:
 
  2014
 
-  Developed OpenGL 3D engine with glsl Phong shading, environment-mapped
-  reflection/refraction (with fresnel effect and chromatic dispersion),
-  normal-mapped textures, platonic primitives generation.
+  Developed OpenGL 3D engine with environment-mapped
+  reflection/refraction/double refraction (with Fresnel effect, chromatic
+  dispersion, and Beer's law), screen space ambient occlusion, bump mapping,
+  Phong shading, Bloom filter, and platonic primitives generation. Platonic
+  primitives supported include sphere, cube, cylinder, cone, grid, tetrahedron,
+  and round brilliant diamond. Many features still experimental.
 
  2010
 
