@@ -13,8 +13,7 @@ PROFESSIONAL OBJECTIVE:
 
 BACKGROUND:
 
-  EDA experience, parsing expertise, compiler front-end, HDL/CAD import/export,
-  2D/3D rendering engine, Linux/Windows OS
+  DSL parsing, 3D rendering engine, Linux/Windows OS
 
 EDUCATION
 
