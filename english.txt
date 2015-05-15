@@ -1,0 +1,34 @@
+   he                                                        (goes <verb>)
+   he (does                 (not))                           (go   <verb>)
+
+   he (is/was               (not))                           (      gone/going<state>)
+   he (is/was               (not))                           (being gone      <state>)
+
+   he (has                  (not))                           (      gone      <verb> )
+   he (has                  (not))                           (been  gone/going<state>)
+
+   he                              (has to)                  (      go        <verb> )
+   he                              (has to)                  (be    gone/going<state>)
+   he                              (has to)     (have (not)) (      gone      <verb> )
+   he                              (has to)     (have (not)) (been  gone/going<state>)
+
+   he (does                 (not)) (have to)                 (      go        <verb> )
+   he (does                 (not)) (have to)                 (be    gone/going<state>)
+   he (does                 (not)) (have to)    (have (not)) (      gone      <verb> )
+   he (does                 (not)) (have to)    (have (not)) (been  gone/going<state>)
+
+   he (will/can/could/would (not))                           (      go        <verb> )
+   he (will/can/could/would (not))                           (be    gone/going<state>)
+   he (will/can/could/would (not))              (have (not)) (      gone      <verb> )
+   he (will/can/could/would (not))              (have (not)) (been  gone/going<state>)
+
+   he (will/can/could/would (not)) (have to)                 (      go        <verb> )
+   he (will/can/could/would (not)) (have to)                 (be    gone/going<state>)
+   he (will/can/could/would (not)) (have to)    (have (not)) (      gone      <verb> )
+   he (will/can/could/would (not)) (have to)    (have (not)) (been  gone/going<state>)
+
+   he (is/was               (not)) ((going) to)              (      go        <verb> )
+   he (is/was               (not)) ((going) to)              (be    gone/going<state>)
+if he (were                 (not)) ((going) to) (have (not)) (      gone      <verb> )
+if he (were                 (not)) ((going) to) (have (not)) (been  gone/going<state>)
+
