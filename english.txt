@@ -1,34 +1,14 @@
-   he                                                        (goes <verb>)
-   he (does                 (not))                           (go   <verb>)
+   <NP> <--VP--------------------------------------------------------------------------------------------------------------------------------->
+   <N>  [--Mod_adv------------------------------------] [--Mod_to-------------------------------] <--V_have_aux------------------------------->
+        <--Mod_adv_prefix--------> [--Adv-------------] [--Mod_to_prefix-------------------] <to> [--Mod_have---------------] <--V_Aux-------->
+                                                                                                  <have> [--Adv-------------] [Aux] <--V------>
 
-   he (is/was               (not))                           (      gone/going<state>)
-   he (is/was               (not))                           (being gone      <state>)
+   he   (does/will/can/could/would (not/hardly/likely)) ((have/go/want/need/able)             to)                             (     go        )
+   he   (does/will/can/could/would (not/hardly/likely)) ((have/go/want/need/able)             to)                             (be   gone/going)
+   he   (does/will/can/could/would (not/hardly/likely)) ((have/go/want/need/able)             to) (have  (not/hardly/likely)) (     gone      )
+   he   (does/will/can/could/would (not/hardly/likely)) ((have/go/want/need/able)             to) (have  (not/hardly/likely)) (been gone/going)
 
-   he (has                  (not))                           (      gone      <verb> )
-   he (has                  (not))                           (been  gone/going<state>)
-
-   he                              (has to)                  (      go        <verb> )
-   he                              (has to)                  (be    gone/going<state>)
-   he                              (has to)     (have (not)) (      gone      <verb> )
-   he                              (has to)     (have (not)) (been  gone/going<state>)
-
-   he (does                 (not)) (have to)                 (      go        <verb> )
-   he (does                 (not)) (have to)                 (be    gone/going<state>)
-   he (does                 (not)) (have to)    (have (not)) (      gone      <verb> )
-   he (does                 (not)) (have to)    (have (not)) (been  gone/going<state>)
-
-   he (will/can/could/would (not))                           (      go        <verb> )
-   he (will/can/could/would (not))                           (be    gone/going<state>)
-   he (will/can/could/would (not))              (have (not)) (      gone      <verb> )
-   he (will/can/could/would (not))              (have (not)) (been  gone/going<state>)
-
-   he (will/can/could/would (not)) (have to)                 (      go        <verb> )
-   he (will/can/could/would (not)) (have to)                 (be    gone/going<state>)
-   he (will/can/could/would (not)) (have to)    (have (not)) (      gone      <verb> )
-   he (will/can/could/would (not)) (have to)    (have (not)) (been  gone/going<state>)
-
-   he (is/was               (not)) ((going) to)              (      go        <verb> )
-   he (is/was               (not)) ((going) to)              (be    gone/going<state>)
-if he (were                 (not)) ((going) to) (have (not)) (      gone      <verb> )
-if he (were                 (not)) ((going) to) (have (not)) (been  gone/going<state>)
-
+   he   (is/was                    (not/hardly/likely)) ((having/going/wanting/needing/able)  to)                             (     go        )
+   he   (is/was                    (not/hardly/likely)) ((having/going/wanting/needing/able)  to)                             (be   gone/going)
+if he   (were                      (not/hardly/likely)) ((having/going/wanting/needing/able)  to) (have  (not/hardly/likely)) (     gone      )
+if he   (were                      (not/hardly/likely)) ((having/going/wanting/needing/able)  to) (have  (not/hardly/likely)) (been gone/going)
