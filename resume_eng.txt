@@ -13,7 +13,8 @@ PROFESSIONAL OBJECTIVE:
 
 BACKGROUND:
 
-  DSL parsing, 3D rendering engine, Linux/Windows OS
+  C++ expert with LexYacc/OpenGL experience.
+  Familiar with Linux software development.
 
 EDUCATION
 
