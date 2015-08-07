@@ -13,7 +13,7 @@ PROFESSIONAL OBJECTIVE:
 
 BACKGROUND:
 
-  C++ expert with LexYacc/OpenGL experience.
+  Parser expert with 3D graphics experience.
   Familiar with Linux software development.
 
 EDUCATION
