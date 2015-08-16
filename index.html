@@ -49,7 +49,7 @@
         <tr>
             <td align="center"><a href=https://github.com/onlyuser/dexvt-test>dexvt-test</a></td>
             <td>
-                A c++/glsl/glm-based 3d engine:<br>
+                A c++/glsl/glm-based 3d engine<br>
                 <table border="0">
                     <tr>
                         <td><a href=https://github.com/onlyuser/dexvt-test/blob/master/src/PrimitiveFactory.cpp>PrimitiveFactory.cpp</a></td>
@@ -93,15 +93,14 @@
         <tr>
             <td align="center"><a href=https://github.com/onlyuser/NatLang>NatLang</a></td>
             <td>
-                English parser with an extensible grammar:<br>
+                English parser with an extensible grammar<br>
                 <table border="0">
                     <tr>
-                        <td><a href=https://github.com/onlyuser/NatLang/blob/master/app/src/NatLang.y>NatLang.y</a></td>
-                        <td>Yacc parser for English (includes BNF for English)</td>
-                    </tr>
-                    <tr>
-                        <td><a href=https://github.com/onlyuser/NatLang/blob/master/app/src/NatLang.l>NatLang.l</a></td>
-                        <td>Lex lexer for English</td>
+                        <td>
+                            [<a href=https://github.com/onlyuser/NatLang/blob/master/app/src/NatLang.y>.y</a>]
+                            [<a href=https://github.com/onlyuser/NatLang/blob/master/app/src/NatLang.l>.l</a>]
+                        </td>
+                        <td>LexYacc specification for English</td>
                     </tr>
                 </table>
             </td>
@@ -134,7 +133,7 @@
         <tr>
             <td align="center"><a href=https://github.com/onlyuser/Sandbox>Sandbox</a></td>
             <td>
-                A collection of experimental code:<br>
+                A collection of experimental code
                 <table border="0">
                     <tr>
                         <td><a href=https://github.com/onlyuser/Sandbox/blob/master/test_c/0x/main.cpp>test_c/0x</a></td>
@@ -170,10 +169,9 @@
                     </tr>
                     <tr>
                         <td>
-                            <table>
-                                <tr><td><a href=https://github.com/onlyuser/Sandbox/blob/master/test_visitor/main.cpp>test_visitor (cpp)</a></td></tr>
-                                <tr><td><a href=https://github.com/onlyuser/Sandbox/blob/master/test_visitor/main.h>test_visitor (h)</a></td></tr>
-                            </table>
+                            test_visitor
+                            [<a href=https://github.com/onlyuser/Sandbox/blob/master/test_visitor/main.cpp>.cpp</a>]
+                            [<a href=https://github.com/onlyuser/Sandbox/blob/master/test_visitor/main.h>.h</a>]
                         </td>
                         <td>How to implement visitor pattern with double-dispatch</td>
                     </tr>
@@ -203,7 +201,7 @@
         <tr>
             <td align="center"><a href=https://github.com/onlyuser/gnu-tools>gnu-tools</a></td>
             <td>
-                A collection of recipes for building gnu-tools from scratch:<br>
+                A collection of recipes for building gnu-tools from scratch<br>
                 <table>
                     <tr>
                         <td><a href=https://github.com/onlyuser/gnu-tools/blob/master/bison/Makefile>bison</a></td>
@@ -267,17 +265,14 @@
         <tr>
             <td align="center"><a href=https://github.com/onlyuser/taipei-mrt>taipei-mrt</a></td>
             <td>
-                taipei-mrt is a graphviz dot specification for the Taipei MRT:<br>
-                台北捷運系統graphviz dot地圖:<br>
+                taipei-mrt is a graphviz dot specification for the Taipei MRT<br>
+                台北捷運系統graphviz dot地圖
                 <table>
-                    <tr>
-                        <td><a href=https://github.com/onlyuser/taipei-mrt/blob/master/taipei-mrt.dot>dot1</a></td>
-                        <td>Simple</td>
-                    </tr>
-                    <tr>
-                        <td><a href=https://github.com/onlyuser/taipei-mrt/blob/master/taipei-mrt_with_pos.dot>dot2</a></td>
-                        <td>With GPS coordinates for major junctions</td>
-                    </tr>
+                    <td>
+                        [<a href=https://github.com/onlyuser/taipei-mrt/blob/master/taipei-mrt.dot>simple</a>]
+                        [<a href=https://github.com/onlyuser/taipei-mrt/blob/master/taipei-mrt_with_pos.dot>with GPS</a>]
+                    </td>
+                    <td>Graphviz dot specification for Taipei MRT connectivity</td>
                 </table>
             </td>
             <td><a href=https://github.com/onlyuser/taipei-mrt#readme>readme</a></td>
@@ -331,7 +326,28 @@
         </tr>
         <tr>
             <td align="center"><a href=https://github.com/onlyuser/Legacy/tree/master/msvc/DexVT>DexVT</a></td>
-            <td>3d engine</td>
+            <td>
+                3d engine<br>
+                <table>
+                    <tr>
+                        <td>
+                            [<a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexVT/Dex3D/File3ds.cpp>3ds</a>]
+                            [<a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexVT/Dex3D/FileBmp.cpp>bmp</a>]
+                        </td>
+                        <td>File importers</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr><td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexVT/Dex3D/Vector.cpp>Vector.cpp</a></td></tr>
+                                <tr><td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexVT/Dex3D/Matrix.cpp>Matrix.cpp</a></td></tr>
+                                <tr><td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexVT/Dex3D/Transform.cpp>Transform.cpp</a></td></tr>
+                            </table>
+                        </td>
+                        <td>Math APIs</td>
+                    </tr>
+                </table>
+            </td>
             <td>2003~2005</td>
             <td>C++, Win32</td>
             <td><a href=https://github.com/onlyuser/Legacy#readme>readme</a></td>
