@@ -90,8 +90,9 @@
     </p>
     <p><strong>More Recent Projects</strong></p>
     <ul class="tab">
-      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Webpage')" id="defaultOpen">Webpage</a></li>
-      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', '3D Graphics')">3D Graphics</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Webpage')">Webpage</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', '3D Graphics')" id="defaultOpen">3D Graphics</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'AI')">AI</a></li>
       <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Parsers')">Parsers</a></li>
       <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Misc')">Misc</a></li>
       <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Scripts')">Scripts</a></li>
@@ -263,7 +264,7 @@
         </tr>
     </table>
 </div>
-<div id="Parsers" class="tabGroup">
+<div id="AI" class="tabGroup">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -275,13 +276,14 @@
             <th>Download</th>
         </tr>
         <tr>
-            <th align="center" rowspan="3">
-                Parsers<br>
-                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/parsers_thumb.PNG"/>
+            <th align="center">
+                AI<br>
+                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/ai_thumb.PNG"/>
             </th>
             <td align="center">
                 <a href=https://github.com/onlyuser/NatLang>NatLang</a><br>
-                English parser<br>
+                Natural Language<br>
+                Processing<br>
                 <a href="https://sites.google.com/site/onlyuser/files/ast_fox.png">
                     <img src="https://sites.google.com/site/onlyuser/files/ast_fox.png" alt="ast_fox" width="200" height="*">
                 </a>
@@ -315,7 +317,24 @@
             </td>
             <td align="center"><a href=https://github.com/onlyuser/NatLang/archive/master.zip>zip</a></td>
         </tr>
+    </table>
+</div>
+<div id="Parsers" class="tabGroup">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Category</th>
+            <th>Project</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
         <tr>
+            <th align="center" rowspan="2">
+                Parsers<br>
+                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/parsers_thumb.PNG"/>
+            </th>
             <td align="center">
                 <a href=https://github.com/onlyuser/XLang>XLang</a><br>
                 Parser framework<br>
@@ -717,10 +736,10 @@
 </div>
     <p><strong>Legacy Projects</strong></p>
     <ul class="tab">
-      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Webpage')" id="defaultOpen2">Webpage</a></li>
-      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy 3D Graphics')">3D Graphics</a></li>
-      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Parsers')">Parsers</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Webpage')">Webpage</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy 3D Graphics')" id="defaultOpen2">3D Graphics</a></li>
       <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy AI')">AI</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Parsers')">Parsers</a></li>
       <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Games')">Games</a></li>
     </ul>
 <div id="Legacy Webpage" class="tabGroup2">
@@ -841,87 +860,6 @@
         </tr>
     </table>
 </div>
-<div id="Legacy Parsers" class="tabGroup2">
-    <table border="1">
-        <tr bgcolor="#F0F0F0">
-            <th>Category</th>
-            <th>Project</th>
-            <th>Code Sample</th>
-            <th>Year</th>
-            <th>Language, OS</th>
-            <th>Readme</th>
-            <th>Screenshot</th>
-            <th>Download</th>
-        </tr>
-        <tr>
-            <th align="center" rowspan="3">
-                Parsers<br>
-                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/parsers_thumb.PNG"/>
-            </th>
-            <td align="center">
-                <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/DexCalc>DexCalc</a><br>
-                calculator<br>
-                (shunting-yard)
-            </td>
-            <td>
-                <table border="0">
-                    <tr>
-                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexCalc/DexCalc.cpp#L49>DexCalc.cpp</a></td>
-                        <td>Algorithm kernel</td>
-                    </tr>
-                </table>
-            </td>
-            <td>2005</td>
-            <td>C++, Win32</td>
-            <td><a href=https://github.com/onlyuser/Legacy#readme>readme</a></td>
-            <td>n/a</td>
-            <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
-        </tr>
-        <tr>
-            <td align="center">
-                <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/DexCC>DexCC</a><br>
-                parser generator<br>
-                (LALR)
-            </td>
-            <td>
-                <table border="0">
-                    <tr>
-                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexCC/ParserGen.cpp#L209>ParserGen.cpp</a></td>
-                        <td>Algorithm kernel</td>
-                    </tr>
-                </table>
-            </td>
-            <td>2005</td>
-            <td>C++, Win32</td>
-            <td><a href=https://github.com/onlyuser/Legacy#readme>readme</a></td>
-            <td>n/a</td>
-            <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
-        </tr>
-        <tr>
-            <td align="center">
-                <a href=https://github.com/onlyuser/Legacy/tree/master/msvb/myBNF>myBNF</a><br>
-                parser generator<br>
-                (LALR)<br>
-                <a href="https://sites.google.com/site/onlyuser/projects/parsers/images/bnf_table.PNG">
-                    <img src="https://sites.google.com/site/onlyuser/projects/parsers/images/bnf_table.PNG" alt="bnf_table" width="200" height="*">
-                </a>
-            </td>
-            <td>
-                <table border="0">
-                    <tr>
-                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvb/myBNF/Module2.bas#L505>Module2.bas</a></td>
-                        <td>Algorithm kernel</td>
-                    </tr>
-                </table>
-            </td>
-            <td>n/a</td>
-            <td>Visual Basic, Win32</td>
-            <td><a href=https://github.com/onlyuser/Legacy#readme>readme</a></td>
-            <td><a href=https://sites.google.com/site/onlyuser/projects/parsers/images/bnf_table.PNG>screenshot</a></td>
-            <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
-        </tr>
-    </table>
-</div>
 <div id="Legacy AI" class="tabGroup2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
@@ -935,10 +873,16 @@
             <th>Download</th>
         </tr>
         <tr bgcolor="#F0F0F0">
+            <th align="center" rowspan="3">
+                AI<br>
+                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/ai_thumb.PNG"/>
+            </th>
             <td align="center">
                 <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/N_Net>N_Net</a><br>
-                neural network<br>
-                (backpropagation)
+                Deep Learning<br>
+                (Multi-layered<br>
+                Backpropagation<br>
+                Neural Network)
             </td>
             <td>
                 <table border="0">
@@ -955,13 +899,9 @@
             <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
         </tr>
         <tr bgcolor="#F0F0F0">
-            <th align="center" rowspan="3">
-                AI<br>
-                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/ai_thumb.PNG"/>
-            </th>
             <td align="center">
                 <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/ksom>ksom</a><br>
-                self-organizing map<br>
+                Self-Organizing Map<br>
                 (k-means)
             </td>
             <td>
@@ -998,6 +938,87 @@
             <td>Visual Basic, Win32</td>
             <td><a href=https://github.com/onlyuser/Legacy#readme>readme</a></td>
             <td><a href=https://sites.google.com/site/onlyuser/projects/ai/images/prolog.PNG>screenshot</a></td>
+            <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
+        </tr>
+    </table>
+</div>
+<div id="Legacy Parsers" class="tabGroup2">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Category</th>
+            <th>Project</th>
+            <th>Code Sample</th>
+            <th>Year</th>
+            <th>Language, OS</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Download</th>
+        </tr>
+        <tr>
+            <th align="center" rowspan="3">
+                Parsers<br>
+                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/parsers_thumb.PNG"/>
+            </th>
+            <td align="center">
+                <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/DexCalc>DexCalc</a><br>
+                Calculator<br>
+                (shunting-yard)
+            </td>
+            <td>
+                <table border="0">
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexCalc/DexCalc.cpp#L49>DexCalc.cpp</a></td>
+                        <td>Algorithm kernel</td>
+                    </tr>
+                </table>
+            </td>
+            <td>2005</td>
+            <td>C++, Win32</td>
+            <td><a href=https://github.com/onlyuser/Legacy#readme>readme</a></td>
+            <td>n/a</td>
+            <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/DexCC>DexCC</a><br>
+                Parser Generator<br>
+                (LALR)
+            </td>
+            <td>
+                <table border="0">
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexCC/ParserGen.cpp#L209>ParserGen.cpp</a></td>
+                        <td>Algorithm kernel</td>
+                    </tr>
+                </table>
+            </td>
+            <td>2005</td>
+            <td>C++, Win32</td>
+            <td><a href=https://github.com/onlyuser/Legacy#readme>readme</a></td>
+            <td>n/a</td>
+            <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href=https://github.com/onlyuser/Legacy/tree/master/msvb/myBNF>myBNF</a><br>
+                Parser Generator<br>
+                (LALR)<br>
+                <a href="https://sites.google.com/site/onlyuser/projects/parsers/images/bnf_table.PNG">
+                    <img src="https://sites.google.com/site/onlyuser/projects/parsers/images/bnf_table.PNG" alt="bnf_table" width="200" height="*">
+                </a>
+            </td>
+            <td>
+                <table border="0">
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvb/myBNF/Module2.bas#L505>Module2.bas</a></td>
+                        <td>Algorithm kernel</td>
+                    </tr>
+                </table>
+            </td>
+            <td>n/a</td>
+            <td>Visual Basic, Win32</td>
+            <td><a href=https://github.com/onlyuser/Legacy#readme>readme</a></td>
+            <td><a href=https://sites.google.com/site/onlyuser/projects/parsers/images/bnf_table.PNG>screenshot</a></td>
             <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
         </tr>
     </table>
@@ -1047,7 +1068,8 @@
         <tr>
             <td align="center">
                 <a href=https://github.com/onlyuser/Legacy/tree/master/msvb/lode_runner>lode_runner</a><br>
-                Lode Runner clone<br>
+                Side-scroller game<br>
+                (Lode Runner clone)<br>
                 <a href="https://sites.google.com/site/onlyuser/projects/games/images/lode-runner.PNG">
                     <img src="https://sites.google.com/site/onlyuser/projects/games/images/lode-runner.PNG" alt="lode-runner" width="200" height="*">
                 </a>
