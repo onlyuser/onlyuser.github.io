@@ -12,6 +12,43 @@
             font-family:arial;
             font-size:100%;
         }
+        body {font-family: "Lato", sans-serif;}
+        ul.tab {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        ul.tab li {float: left;}
+        ul.tab li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        ul.tab li a:hover {
+            background-color: #ddd;
+        }
+        ul.tab li a:focus, .active {
+            background-color: #ccc;
+        }
+        .tabGroup {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .tabGroup2 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
     </style>
 </head>
 
@@ -19,6 +56,19 @@
 <script>
     function get_gravatar(email, size) {
         return 'http://www.gravatar.com/avatar/' + CryptoJS.MD5(email) + '.jpg?s=' + size;
+    }
+    function openTab(_event, _tabContentName, _tabLinksName, _tabName) {
+        var i, _tabGroup, _tabLinks;
+        _tabGroup = document.getElementsByClassName(_tabContentName);
+        for (i = 0; i < _tabGroup.length; i++) {
+            _tabGroup[i].style.display = "none";
+        }
+        _tabLinks = document.getElementsByClassName(_tabLinksName);
+        for (i = 0; i < _tabLinks.length; i++) {
+            _tabLinks[i].className = _tabLinks[i].className.replace(" active", "");
+        }
+        document.getElementById(_tabName).style.display = "block";
+        _event.currentTarget.className += " active";
     }
 </script>
 
@@ -36,9 +86,19 @@
         Familiar with Linux software development.
     </p>
     <p>
-        Eight years industry experience in C++ software development.
+        Ten years industry experience in C++ software development.
     </p>
-    <p><strong>Recent Projects</strong></p>
+    <p><strong>More Recent Projects</strong></p>
+    <ul class="tab">
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Webpage')" id="defaultOpen">Webpage</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', '3D Graphics')">3D Graphics</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Parsers')">Parsers</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Misc')">Misc</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Scripts')">Scripts</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Graphviz')">Graphviz</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Linux')">Linux</a></li>
+    </ul>
+<div id="Webpage" class="tabGroup">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Type</th>
@@ -61,6 +121,19 @@
             <td>n/a</td>
             <td>n/a</td>
             <td align="center"><a href=https://github.com/onlyuser/onlyuser.github.io/archive/master.zip>zip</a></td>
+        </tr>
+    </table>
+</div>
+<div id="3D Graphics" class="tabGroup">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
         </tr>
         <tr bgcolor="#F0F0F0">
             <th align="center" rowspan="2">
@@ -188,6 +261,19 @@
             <td>n/a</td>
             <td align="center"><a href=https://github.com/syoyo/MMDLoader/archive/master.zip>zip</a></td>
         </tr>
+    </table>
+</div>
+<div id="Parsers" class="tabGroup">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
         <tr>
             <th align="center" rowspan="3">
                 Parsers<br>
@@ -296,6 +382,19 @@
             </td>
             <td align="center"><a href=https://github.com/onlyuser/ebnf2yacc/archive/master.zip>zip</a></td>
         </tr>
+    </table>
+</div>
+<div id="Misc" class="tabGroup">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
         <tr bgcolor="#F0F0F0">
             <th align="center">
                 Misc<br>
@@ -383,6 +482,19 @@
             </td>
             <td align="center"><a href=https://github.com/onlyuser/Sandbox/archive/master.zip>zip</a></td>
         </tr>
+    </table>
+</div>
+<div id="Scripts" class="tabGroup">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
         <tr>
             <th align="center" rowspan="5">
                 Scripts<br>
@@ -441,6 +553,19 @@
             <td>n/a</td>
             <td>n/a</td>
             <td align="center"><a href=https://github.com/onlyuser/sh/archive/master.zip>zip</a></td>
+        </tr>
+    </table>
+</div>
+<div id="Graphviz" class="tabGroup">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
         </tr>
         <tr bgcolor="#F0F0F0">
             <th align="center" rowspan="3">
@@ -526,6 +651,19 @@
             <td>n/a</td>
             <td align="center"><a href=https://github.com/onlyuser/tokyo-metro/archive/master.zip>zip</a></td>
         </tr>
+    </table>
+</div>
+<div id="Linux" class="tabGroup">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
         <tr>
             <th align="center">
                 Linux<br>
@@ -558,7 +696,16 @@
             <td align="center"><a href=https://github.com/onlyuser/gnu-tools/archive/master.zip>zip</a></td>
         </tr>
     </table>
+</div>
     <p><strong>Legacy Projects</strong></p>
+    <ul class="tab">
+      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Webpage')" id="defaultOpen2">Webpage</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy 3D Graphics')">3D Graphics</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Parsers')">Parsers</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy AI')">AI</a></li>
+      <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Games')">Games</a></li>
+    </ul>
+<div id="Legacy Webpage" class="tabGroup2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Type</th>
@@ -583,6 +730,19 @@
             <td>n/a</td>
             <td>n/a</td>
             <td align="center">n/a</td>
+        </tr>
+    </table>
+</div>
+<div id="Legacy 3D Graphics" class="tabGroup2">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
         </tr>
         <tr bgcolor="#F0F0F0">
             <th align="center" rowspan="2">
@@ -654,6 +814,19 @@
             <td><a href=https://sites.google.com/site/onlyuser/projects/graphics/images/dex3d-1_gui.PNG>screenshot</a></td>
             <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
         </tr>
+    </table>
+</div>
+<div id="Legacy Parsers" class="tabGroup2">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
         <tr>
             <th align="center" rowspan="3">
                 Parsers<br>
@@ -718,6 +891,19 @@
             <td><a href=https://sites.google.com/site/onlyuser/projects/parsers/images/bnf_table.PNG>screenshot</a></td>
             <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
         </tr>
+    </table>
+</div>
+<div id="Legacy AI" class="tabGroup2">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
         <tr bgcolor="#F0F0F0">
             <th align="center" rowspan="3">
                 AI<br>
@@ -781,6 +967,19 @@
             <td><a href=https://sites.google.com/site/onlyuser/projects/ai/images/prolog.PNG>screenshot</a></td>
             <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
         </tr>
+    </table>
+</div>
+<div id="Legacy Games" class="tabGroup2">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Type</th>
+            <th>Project / Description</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
         <tr>
             <th align="center" rowspan="2">
                 Games<br>
@@ -831,6 +1030,7 @@
             <td align="center"><a href=https://github.com/onlyuser/Legacy/archive/master.zip>zip</a></td>
         </tr>
     </table>
+</div>
     <p><strong>Resume</strong></p>
     <ul>
         <li><a href=resume_eng.txt>resume (txt)</a></li>
@@ -849,5 +1049,10 @@
         </tr>
     </table>
 </body>
+
+<script>
+    document.getElementById("defaultOpen2").click();
+    document.getElementById("defaultOpen").click();
+</script>
 
 </html>
