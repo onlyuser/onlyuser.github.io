@@ -1,12 +1,10 @@
-body
-{
-background-color: #ffffff;
+body {
+    background-color: #ffffff;
 }
 
-p, li, th, td
-{
-font-family: arial, 'sans serif';
-font-size: 16;
+p, li, th, td {
+    font-family: arial, 'sans serif';
+    font-size: 16;
 }
 
 a:link    {color:black}
