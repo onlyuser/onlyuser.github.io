@@ -44,13 +44,13 @@
         ul.tab li a:focus, .active {
             background-color: #ccc;
         }
-        .tabGroup {
+        .tabContent {
             display: none;
             padding: 6px 12px;
             border: 1px solid #ccc;
             border-top: none;
         }
-        .tabGroup2 {
+        .tabContent2 {
             display: none;
             padding: 6px 12px;
             border: 1px solid #ccc;
@@ -65,17 +65,37 @@
     function get_gravatar(email, size) {
         return 'http://www.gravatar.com/avatar/' + CryptoJS.MD5(email) + '.jpg?s=' + size;
     }
-    function openTab(_event, _tabContentName, _tabLinksName, _tabName) {
-        var i, _tabGroup, _tabLinks;
-        _tabGroup = document.getElementsByClassName(_tabContentName);
-        for (i = 0; i < _tabGroup.length; i++) {
-            _tabGroup[i].style.display = "none";
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
         }
-        _tabLinks = document.getElementsByClassName(_tabLinksName);
-        for (i = 0; i < _tabLinks.length; i++) {
-            _tabLinks[i].className = _tabLinks[i].className.replace(" active", "");
+        return "";
+    }
+    function openTab(_event, _tabWidgetClass, _tabContentClass, _tabContentId) {
+        var i, _tabContent, _tabWidget;
+        _tabContent = document.getElementsByClassName(_tabContentClass);
+        for (i = 0; i < _tabContent.length; i++) {
+            _tabContent[i].style.display = "none";
         }
-        document.getElementById(_tabName).style.display = "block";
+        _tabWidget = document.getElementsByClassName(_tabWidgetClass);
+        for (i = 0; i < _tabWidget.length; i++) {
+            _tabWidget[i].className = _tabWidget[i].className.replace(" active", "");
+        }
+        document.getElementById(_tabContentId).style.display = "block";
         _event.currentTarget.className += " active";
     }
 </script>
@@ -98,16 +118,16 @@
     </p>
     <h2>More Recent Projects</h2>
     <ul class="tab">
-        <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Webpage')">Webpage</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', '3D Graphics')" id="defaultOpen">3D Graphics</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'AI')">AI</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Parsers')">Parsers</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Misc')">Misc</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Scripts')">Scripts</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Graphviz')">Graphviz</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks" onclick="openTab(event, 'tabGroup', 'tabLinks', 'Linux')">Linux</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Webpage')" >Webpage</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', '3D Graphics')" id="defaultTabId">3D Graphics</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'AI')"      >AI</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Parsers')" >Parsers</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Misc')"    >Misc</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Scripts')" >Scripts</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Graphviz')">Graphviz</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Linux')"   >Linux</a></li>
     </ul>
-<div id="Webpage" class="tabGroup">
+<div id="Webpage" class="tabContent">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -133,7 +153,7 @@
         </tr>
     </table>
 </div>
-<div id="3D Graphics" class="tabGroup">
+<div id="3D Graphics" class="tabContent">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -275,7 +295,7 @@
         </tr>
     </table>
 </div>
-<div id="AI" class="tabGroup">
+<div id="AI" class="tabContent">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -330,7 +350,7 @@
         </tr>
     </table>
 </div>
-<div id="Parsers" class="tabGroup">
+<div id="Parsers" class="tabContent">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -420,7 +440,7 @@
         </tr>
     </table>
 </div>
-<div id="Misc" class="tabGroup">
+<div id="Misc" class="tabContent">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -520,7 +540,7 @@
         </tr>
     </table>
 </div>
-<div id="Scripts" class="tabGroup">
+<div id="Scripts" class="tabContent">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -595,7 +615,7 @@
         </tr>
     </table>
 </div>
-<div id="Graphviz" class="tabGroup">
+<div id="Graphviz" class="tabContent">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -701,7 +721,7 @@
         </tr>
     </table>
 </div>
-<div id="Linux" class="tabGroup">
+<div id="Linux" class="tabContent">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -747,15 +767,15 @@
 </div>
     <h2>Legacy Projects</h2>
     <ul class="tab">
-        <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Webpage')">Webpage</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy 3D Graphics')" id="defaultOpen2">3D Graphics</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy AI')">AI</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Parsers')">Parsers</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Games')">Games</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy University')">University</a></li>
-        <li><a href="javascript:void(0)" class="tabLinks2" onclick="openTab(event, 'tabGroup2', 'tabLinks2', 'Legacy Networking')">Networking</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy Webpage')"   >Webpage</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy 3D Graphics')" id="defaultTabId2">3D Graphics</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy AI')"        >AI</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy Parsers')"   >Parsers</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy Games')"     >Games</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy University')">University</a></li>
+        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy Networking')">Networking</a></li>
     </ul>
-<div id="Legacy Webpage" class="tabGroup2">
+<div id="Legacy Webpage" class="tabContent2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -783,7 +803,7 @@
         </tr>
     </table>
 </div>
-<div id="Legacy 3D Graphics" class="tabGroup2">
+<div id="Legacy 3D Graphics" class="tabContent2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -937,7 +957,7 @@
         </tr>
     </table>
 </div>
-<div id="Legacy AI" class="tabGroup2">
+<div id="Legacy AI" class="tabContent2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1123,7 +1143,7 @@
         </tr>
     </table>
 </div>
-<div id="Legacy Parsers" class="tabGroup2">
+<div id="Legacy Parsers" class="tabContent2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1214,7 +1234,7 @@
         </tr>
     </table>
 </div>
-<div id="Legacy Games" class="tabGroup2">
+<div id="Legacy Games" class="tabContent2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1348,7 +1368,7 @@
         </tr>
     </table>
 </div>
-<div id="Legacy University" class="tabGroup2">
+<div id="Legacy University" class="tabContent2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1435,7 +1455,7 @@
         </tr>
     </table>
 </div>
-<div id="Legacy Networking" class="tabGroup2">
+<div id="Legacy Networking" class="tabContent2">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1511,8 +1531,11 @@
 </body>
 
 <script>
-    document.getElementById("defaultOpen2").click();
-    document.getElementById("defaultOpen").click();
+    //setCookie("qwe", "abc", 1);
+    //var qwe_var = getCookie("qwe");
+    //alert("qwe_var=" + qwe_var);
+    document.getElementById("defaultTabId2").click();
+    document.getElementById("defaultTabId").click();
 </script>
 
 </html>
