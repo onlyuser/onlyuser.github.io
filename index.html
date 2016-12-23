@@ -50,7 +50,7 @@
             border: 1px solid #ccc;
             border-top: none;
         }
-        .tabContent2 {
+        .tabContentLegacy {
             display: none;
             padding: 6px 12px;
             border: 1px solid #ccc;
@@ -68,7 +68,7 @@
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        var expires = "expires="+d.toUTCString();
+        var expires = "expires=" + d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
     function getCookie(cname) {
@@ -85,18 +85,21 @@
         }
         return "";
     }
-    function openTab(_event, _tabWidgetClass, _tabContentClass, _tabContentId) {
-        var i, _tabContent, _tabWidget;
-        _tabContent = document.getElementsByClassName(_tabContentClass);
-        for (i = 0; i < _tabContent.length; i++) {
-            _tabContent[i].style.display = "none";
+    function openTab(event, tabWidgetClass, tabContentClass, tabContentId) {
+        var i, tabContent, tabWidget;
+        tabContent = document.getElementsByClassName(tabContentClass);
+        for(i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+            if(tabContent[i].id == tabContentId) {
+                tabContent[i].style.display = "block";
+            }
         }
-        _tabWidget = document.getElementsByClassName(_tabWidgetClass);
-        for (i = 0; i < _tabWidget.length; i++) {
-            _tabWidget[i].className = _tabWidget[i].className.replace(" active", "");
+        tabWidget = document.getElementsByClassName(tabWidgetClass);
+        for(i = 0; i < tabWidget.length; i++) {
+            tabWidget[i].className = tabWidget[i].className.replace(" active", "");
         }
-        document.getElementById(_tabContentId).style.display = "block";
-        _event.currentTarget.className += " active";
+        event.currentTarget.className += " active";
+        setCookie("QWE" + tabContentClass, tabContentId, 1);
     }
 </script>
 
@@ -118,14 +121,14 @@
     </p>
     <h2>More Recent Projects</h2>
     <ul class="tab">
-        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Webpage')" >Webpage</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', '3D Graphics')" id="defaultTabId">3D Graphics</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'AI')"      >AI</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Parsers')" >Parsers</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Misc')"    >Misc</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Scripts')" >Scripts</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Graphviz')">Graphviz</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget" onclick="openTab(event, 'tabWidget', 'tabContent', 'Linux')"   >Linux</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Webpage')"     class="tabWidget" id="Webpage"    >Webpage</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', '3D Graphics')" class="tabWidget" id="3D Graphics">3D Graphics</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'AI')"          class="tabWidget" id="AI"         >AI</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Parsers')"     class="tabWidget" id="Parsers"    >Parsers</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Misc')"        class="tabWidget" id="Misc"       >Misc</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Scripts')"     class="tabWidget" id="Scripts"    >Scripts</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Graphviz')"    class="tabWidget" id="Graphviz"   >Graphviz</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Linux')"       class="tabWidget" id="Linux"      >Linux</a></li>
     </ul>
 <div class="tabContent" id="Webpage">
     <table border="1">
@@ -767,15 +770,15 @@
 </div>
     <h2>Legacy Projects</h2>
     <ul class="tab">
-        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy Webpage')"   >Webpage</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy 3D Graphics')" id="defaultTabId2">3D Graphics</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy AI')"        >AI</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy Parsers')"   >Parsers</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy Games')"     >Games</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy University')">University</a></li>
-        <li><a href="javascript:void(0)" class="tabWidget2" onclick="openTab(event, 'tabWidget2', 'tabContent2', 'Legacy Networking')">Networking</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'Webpage')"     class="tabWidgetLegacy" id="Webpage"    >Webpage</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', '3D Graphics')" class="tabWidgetLegacy" id="3D Graphics">3D Graphics</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'AI')"          class="tabWidgetLegacy" id="AI"         >AI</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'Parsers')"     class="tabWidgetLegacy" id="Parsers"    >Parsers</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'Games')"       class="tabWidgetLegacy" id="Games"      >Games</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'University')"  class="tabWidgetLegacy" id="University" >University</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'Networking')"  class="tabWidgetLegacy" id="Networking" >Networking</a></li>
     </ul>
-<div class="tabContent2" id="Legacy Webpage">
+<div class="tabContentLegacy" id="Webpage">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -803,7 +806,7 @@
         </tr>
     </table>
 </div>
-<div class="tabContent2" id="Legacy 3D Graphics">
+<div class="tabContentLegacy" id="3D Graphics">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -957,7 +960,7 @@
         </tr>
     </table>
 </div>
-<div class="tabContent2" id="Legacy AI">
+<div class="tabContentLegacy" id="AI">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1143,7 +1146,7 @@
         </tr>
     </table>
 </div>
-<div class="tabContent2" id="Legacy Parsers">
+<div class="tabContentLegacy" id="Parsers">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1234,7 +1237,7 @@
         </tr>
     </table>
 </div>
-<div class="tabContent2" id="Legacy Games">
+<div class="tabContentLegacy" id="Games">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1368,7 +1371,7 @@
         </tr>
     </table>
 </div>
-<div class="tabContent2" id="Legacy University">
+<div class="tabContentLegacy" id="University">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1455,7 +1458,7 @@
         </tr>
     </table>
 </div>
-<div class="tabContent2" id="Legacy Networking">
+<div class="tabContentLegacy" id="Networking">
     <table border="1">
         <tr bgcolor="#F0F0F0">
             <th>Category</th>
@@ -1534,8 +1537,29 @@
     //setCookie("qwe", "abc", 1);
     //var qwe_var = getCookie("qwe");
     //alert("qwe_var=" + qwe_var);
-    document.getElementById("defaultTabId2").click();
-    document.getElementById("defaultTabId").click();
+
+    //document.getElementById("Legacy 3D Graphics").click();
+    var prevOpenedTabContentLegacy = getCookie("QWE" + "tabContentLegacy");
+    if(prevOpenedTabContentLegacy == "") {
+        prevOpenedTabContentLegacy = "3D Graphics";
+    }
+    tabContent = document.getElementsByClassName("tabWidgetLegacy");
+    for(i = 0; i < tabContent.length; i++) {
+        if(tabContent[i].id == prevOpenedTabContentLegacy) {
+            tabContent[i].click();
+        }
+    }
+    //document.getElementById("3D Graphics").click();
+    var prevOpenedTabContent = getCookie("QWE" + "tabContent");
+    if(prevOpenedTabContent == "") {
+        prevOpenedTabContent = "3D Graphics";
+    }
+    tabContent = document.getElementsByClassName("tabWidget");
+    for(i = 0; i < tabContent.length; i++) {
+        if(tabContent[i].id == prevOpenedTabContent) {
+            tabContent[i].click();
+        }
+    }
 </script>
 
 </html>
