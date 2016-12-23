@@ -85,6 +85,7 @@
         }
         return "";
     }
+    var cookiePrefix = "cookiePrefix_";
     function openTab(event, tabWidgetClass, tabContentClass, tabContentId) {
         var i, tabContent, tabWidget;
         tabContent = document.getElementsByClassName(tabContentClass);
@@ -99,7 +100,7 @@
             tabWidget[i].className = tabWidget[i].className.replace(" active", "");
         }
         event.currentTarget.className += " active";
-        setCookie("QWE" + tabContentClass, tabContentId, 1);
+        setCookie(cookiePrefix + tabContentClass, tabContentId, 1);
     }
 </script>
 
@@ -1534,12 +1535,8 @@
 </body>
 
 <script>
-    //setCookie("qwe", "abc", 1);
-    //var qwe_var = getCookie("qwe");
-    //alert("qwe_var=" + qwe_var);
-
     //document.getElementById("Legacy 3D Graphics").click();
-    var prevOpenedTabContentLegacy = getCookie("QWE" + "tabContentLegacy");
+    var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
     if(prevOpenedTabContentLegacy == "") {
         prevOpenedTabContentLegacy = "3D Graphics";
     }
@@ -1550,7 +1547,7 @@
         }
     }
     //document.getElementById("3D Graphics").click();
-    var prevOpenedTabContent = getCookie("QWE" + "tabContent");
+    var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
     if(prevOpenedTabContent == "") {
         prevOpenedTabContent = "3D Graphics";
     }
