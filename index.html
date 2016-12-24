@@ -90,6 +90,9 @@
         setCookie(cookiePrefix + tabContentClass, tabContentId, 1);
     }
     function restoreTabs(defaultTabContent, defaultTabContentLegacy) {
+        if(window.location.href.indexOf("#Resume") != -1) {
+            return;
+        }
         var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
         if(prevOpenedTabContentLegacy == "") {
             prevOpenedTabContentLegacy = defaultTabContentLegacy;
@@ -131,7 +134,7 @@
         if(tabWidgetClass == "tabWidgetLegacy") {
             window.location.href = "#Legacy Projects";
         }
-        saveTab(tabContentClass, tabContentId, window.location.href);
+        saveTab(tabContentClass, tabContentId);
     }
 </script>
 
@@ -1637,8 +1640,8 @@
 </div>
     <h2 id="Resume">Resume</h2>
     <ul>
-        <li><a href=resume_eng.txt>resume (txt)</a></li>
-        <li><a href=resume_eng.html>resume (html)</a></li>
+        <li><a href="javascript:void(0)" onclick="window.location.href='#Resume'; window.location='resume_eng.txt'">resume (txt)</a></li>
+        <li><a href="javascript:void(0)" onclick="window.location.href='#Resume'; window.location='resume_eng.html'">resume (html)</a></li>
     </ul>
     <hr>
     <p>Copyright (C) 2011-2015 Jerry Chen</p>
@@ -1655,7 +1658,7 @@
 </body>
 
 <script>
-    restoreTabs("3D Graphics", "3D Graphics");
+    restoreTabs("Webpage", "Webpage");
 </script>
 
 </html>
