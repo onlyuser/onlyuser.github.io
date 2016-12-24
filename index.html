@@ -90,27 +90,28 @@
         setCookie(cookiePrefix + tabContentClass, tabContentId, 1);
     }
     function restoreTabs(defaultTabContent, defaultTabContentLegacy) {
-        if(window.location.href.indexOf("#Resume") != -1) {
-            return;
-        }
-        var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
-        if(prevOpenedTabContentLegacy == "") {
-            prevOpenedTabContentLegacy = defaultTabContentLegacy;
-        }
-        tabContent = document.getElementsByClassName("tabWidgetLegacy");
-        for(i = 0; i < tabContent.length; i++) {
-            if(tabContent[i].id == prevOpenedTabContentLegacy) {
-                tabContent[i].click();
+        if(window.location.href.indexOf("#Legacy Projects") != -1) {
+            var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
+            if(prevOpenedTabContentLegacy == "") {
+                prevOpenedTabContentLegacy = defaultTabContentLegacy;
+            }
+            tabContent = document.getElementsByClassName("tabWidgetLegacy");
+            for(i = 0; i < tabContent.length; i++) {
+                if(tabContent[i].id == prevOpenedTabContentLegacy) {
+                    tabContent[i].click();
+                }
             }
         }
-        var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
-        if(prevOpenedTabContent == "") {
-            prevOpenedTabContent = defaultTabContent;
-        }
-        tabContent = document.getElementsByClassName("tabWidget");
-        for(i = 0; i < tabContent.length; i++) {
-            if(tabContent[i].id == prevOpenedTabContent) {
-                tabContent[i].click();
+        if(window.location.href.indexOf("#More Recent Projects") != -1) {
+            var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
+            if(prevOpenedTabContent == "") {
+                prevOpenedTabContent = defaultTabContent;
+            }
+            tabContent = document.getElementsByClassName("tabWidget");
+            for(i = 0; i < tabContent.length; i++) {
+                if(tabContent[i].id == prevOpenedTabContent) {
+                    tabContent[i].click();
+                }
             }
         }
     }
