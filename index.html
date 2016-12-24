@@ -90,7 +90,8 @@
         setCookie(cookiePrefix + tabContentClass, tabContentId, 1);
     }
     function restoreTabs(defaultTabContent, defaultTabContentLegacy) {
-        if(window.location.href.indexOf("#Legacy Projects") != -1) {
+        var has_anchor = window.location.href.indexOf("#");
+        if(!has_anchor || window.location.href.indexOf("#Legacy Projects") != -1) {
             var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
             if(prevOpenedTabContentLegacy == "") {
                 prevOpenedTabContentLegacy = defaultTabContentLegacy;
@@ -102,7 +103,7 @@
                 }
             }
         }
-        if(window.location.href.indexOf("#More Recent Projects") != -1) {
+        if(!has_anchor || window.location.href.indexOf("#More Recent Projects") != -1) {
             var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
             if(prevOpenedTabContent == "") {
                 prevOpenedTabContent = defaultTabContent;
