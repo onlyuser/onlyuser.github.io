@@ -86,6 +86,31 @@
         return "";
     }
     var cookiePrefix = "cookiePrefix_";
+    function saveTab(tabContentClass, tabContentId) {
+        setCookie(cookiePrefix + tabContentClass, tabContentId, 1);
+    }
+    function restoreTab() {
+        var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
+        if(prevOpenedTabContentLegacy == "") {
+            prevOpenedTabContentLegacy = "3D Graphics";
+        }
+        tabContent = document.getElementsByClassName("tabWidgetLegacy");
+        for(i = 0; i < tabContent.length; i++) {
+            if(tabContent[i].id == prevOpenedTabContentLegacy) {
+                tabContent[i].click();
+            }
+        }
+        var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
+        if(prevOpenedTabContent == "") {
+            prevOpenedTabContent = "3D Graphics";
+        }
+        tabContent = document.getElementsByClassName("tabWidget");
+        for(i = 0; i < tabContent.length; i++) {
+            if(tabContent[i].id == prevOpenedTabContent) {
+                tabContent[i].click();
+            }
+        }
+    }
     function openTab(event, tabWidgetClass, tabContentClass, tabContentId) {
         var i, tabContent, tabWidget;
         tabContent = document.getElementsByClassName(tabContentClass);
@@ -100,7 +125,7 @@
             tabWidget[i].className = tabWidget[i].className.replace(" active", "");
         }
         event.currentTarget.className += " active";
-        setCookie(cookiePrefix + tabContentClass, tabContentId, 1);
+        saveTab(tabContentClass, tabContentId);
     }
 </script>
 
@@ -149,7 +174,25 @@
                 New site<br>
                 (You're reading it!)
             </td>
-            <td>n/a</td>
+            <td>
+                <table border="0">
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/onlyuser.github.io/blob/master/index.html#L114>index.html</a></td>
+                        <td>How to implement tabs in a webpage</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/onlyuser.github.io/blob/master/index.html#L68>index.html</a></td>
+                        <td>How to add cookies to a webpage</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/onlyuser.github.io/blob/master/index.html#L92>index.html</a></td>
+                        <td>
+                            How to restore previously opened tabs<br>
+                            after refresh in a webpage
+                        </td>
+                    </tr>
+                </table>
+            </td>
             <td><a href=https://github.com/onlyuser/onlyuser.github.io#readme>readme</a></td>
             <td>n/a</td>
             <td>n/a</td>
@@ -1535,28 +1578,7 @@
 </body>
 
 <script>
-    //document.getElementById("Legacy 3D Graphics").click();
-    var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
-    if(prevOpenedTabContentLegacy == "") {
-        prevOpenedTabContentLegacy = "3D Graphics";
-    }
-    tabContent = document.getElementsByClassName("tabWidgetLegacy");
-    for(i = 0; i < tabContent.length; i++) {
-        if(tabContent[i].id == prevOpenedTabContentLegacy) {
-            tabContent[i].click();
-        }
-    }
-    //document.getElementById("3D Graphics").click();
-    var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
-    if(prevOpenedTabContent == "") {
-        prevOpenedTabContent = "3D Graphics";
-    }
-    tabContent = document.getElementsByClassName("tabWidget");
-    for(i = 0; i < tabContent.length; i++) {
-        if(tabContent[i].id == prevOpenedTabContent) {
-            tabContent[i].click();
-        }
-    }
+    restoreTab();
 </script>
 
 </html>
