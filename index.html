@@ -89,10 +89,10 @@
     function saveTab(tabContentClass, tabContentId) {
         setCookie(cookiePrefix + tabContentClass, tabContentId, 1);
     }
-    function restoreTab() {
+    function restoreTabs(defaultTabContent, defaultTabContentLegacy) {
         var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
         if(prevOpenedTabContentLegacy == "") {
-            prevOpenedTabContentLegacy = "3D Graphics";
+            prevOpenedTabContentLegacy = defaultTabContentLegacy;
         }
         tabContent = document.getElementsByClassName("tabWidgetLegacy");
         for(i = 0; i < tabContent.length; i++) {
@@ -102,7 +102,7 @@
         }
         var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
         if(prevOpenedTabContent == "") {
-            prevOpenedTabContent = "3D Graphics";
+            prevOpenedTabContent = defaultTabContent;
         }
         tabContent = document.getElementsByClassName("tabWidget");
         for(i = 0; i < tabContent.length; i++) {
@@ -1263,7 +1263,18 @@
                 <table border="0">
                     <tr>
                         <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexCC/ParserGen.cpp#L209>ParserGen.cpp</a></td>
-                        <td>Algorithm kernel</td>
+                        <td>
+                            Algorithm kernel<br>
+                            (build states table)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexCC/ParserGen.cpp#L49>ParserGen.cpp</a></td>
+                        <td>Build configuration sets</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvc/DexCC/ParserGen.cpp#L96>ParserGen.cpp</a></td>
+                        <td>Compress states table</td>
                     </tr>
                 </table>
             </td>
@@ -1286,8 +1297,19 @@
             <td>
                 <table border="0">
                     <tr>
-                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvb/myBNF/Module2.bas#L505>Module2.bas</a></td>
-                        <td>Algorithm kernel</td>
+                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvb/myBNF/Module2.bas#L505>Module4.bas</a></td>
+                        <td>
+                            Algorithm kernel<br>
+                            (build states table)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvb/myBNF/Module2.bas#L360>Module2.bas</a></td>
+                        <td>Build configuration sets</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/Legacy/blob/master/msvb/myBNF/Module4.bas#L57>Module4.bas</a></td>
+                        <td>Compress states table</td>
                     </tr>
                 </table>
             </td>
@@ -1621,7 +1643,7 @@
 </body>
 
 <script>
-    restoreTab();
+    restoreTabs("3D Graphics", "3D Graphics");
 </script>
 
 </html>
