@@ -90,7 +90,7 @@
         setCookie(cookiePrefix + tabContentClass, tabContentId, 1);
     }
     function restoreTabs(defaultTabContent, defaultTabContentLegacy) {
-        var hasAnchor = (window.location.href.indexOf("#") != -1);
+        var hasAnchor               = (window.location.href.indexOf("#") != -1);
         var viewingTabContent       = (window.location.href.indexOf("#More Recent Projects") != -1);
         var viewingTabContentLegacy = (window.location.href.indexOf("#Legacy Projects") != -1);
         if(!hasAnchor || viewingTabContent) {
