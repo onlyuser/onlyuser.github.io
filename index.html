@@ -91,20 +91,8 @@
     }
     function restoreTabs(defaultTabContent, defaultTabContentLegacy) {
         var hasAnchor               = (window.location.href.indexOf("#") != -1);
-        var viewingTabContent       = (window.location.href.indexOf("#More Recent Projects") != -1);
         var viewingTabContentLegacy = (window.location.href.indexOf("#Legacy Projects") != -1);
-        if(!hasAnchor || viewingTabContent) {
-            var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
-            if(prevOpenedTabContent == "") {
-                prevOpenedTabContent = defaultTabContent;
-            }
-            tabContent = document.getElementsByClassName("tabWidget");
-            for(i = 0; i < tabContent.length; i++) {
-                if(tabContent[i].id == prevOpenedTabContent) {
-                    tabContent[i].click();
-                }
-            }
-        }
+        var viewingTabContent       = (window.location.href.indexOf("#More Recent Projects") != -1);
         if(!hasAnchor || viewingTabContentLegacy) {
             var prevOpenedTabContentLegacy = getCookie(cookiePrefix + "tabContentLegacy");
             if(prevOpenedTabContentLegacy == "") {
@@ -113,6 +101,18 @@
             tabContent = document.getElementsByClassName("tabWidgetLegacy");
             for(i = 0; i < tabContent.length; i++) {
                 if(tabContent[i].id == prevOpenedTabContentLegacy) {
+                    tabContent[i].click();
+                }
+            }
+        }
+        if(!hasAnchor || viewingTabContent) {
+            var prevOpenedTabContent = getCookie(cookiePrefix + "tabContent");
+            if(prevOpenedTabContent == "") {
+                prevOpenedTabContent = defaultTabContent;
+            }
+            tabContent = document.getElementsByClassName("tabWidget");
+            for(i = 0; i < tabContent.length; i++) {
+                if(tabContent[i].id == prevOpenedTabContent) {
                     tabContent[i].click();
                 }
             }
