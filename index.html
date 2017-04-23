@@ -966,6 +966,7 @@
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'Games')"       class="tabWidgetLegacy" id="Games"      >Games</a></li>
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'University')"  class="tabWidgetLegacy" id="University" >University</a></li>
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'Networking')"  class="tabWidgetLegacy" id="Networking" >Networking</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidgetLegacy', 'tabContentLegacy', 'Patents')"     class="tabWidgetLegacy" id="Patents"    >Patents</a></li>
     </ul>
 <div class="tabContentLegacy" id="Webpage">
     <table border="1">
@@ -1658,7 +1659,7 @@
                 Probabilistic roadmap<br>
                 construction along the<br>
                 Voronoi of known CFree<br>
-                (master's thesis)<br>
+                (master's thesis, unpublished)<br>
                 <a href=https://sites.google.com/site/onlyuser/projects/research/images/voronoi-cuts_s_04.PNG>
                     <img src="https://sites.google.com/site/onlyuser/projects/research/images/voronoi-cuts_s_04.PNG" alt="voronoi-cuts_s_04" width="200" height="*">
                 </a>
@@ -1797,6 +1798,56 @@
             </td>
             <td>n/a</td>
             <td><a href=https://sites.google.com/site/onlyuser/projects/networking/images/udp_proxy.PNG>screenshot</a></td>
+            <td align="center">n/a</td>
+        </tr>
+    </table>
+</div>
+<div class="tabContentLegacy" id="Patents">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Category</th>
+            <th>Project</th>
+            <th>Code Sample</th>
+            <th>Year</th>
+            <th>Language, OS</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Download</th>
+        </tr>
+        <tr>
+            <th align="center" rowspan="2">
+                Patents
+            </th>
+            <td align="center">
+                Defensive Patents<br>
+                <a href=https://www.google.com/patents/US8667154>US8667154</a>,<br>
+                <a href=https://www.google.com/patents/US7949771>US7949771</a><br>
+                "Authentication of<br>
+                unknown parties<br>
+                in secure computer<br>
+                communications"<br>
+                (a highly contrived<br>
+                CA authentication<br>
+                scheme used to<br>
+                circumvent/counter<br>
+                a competitor claim<br>
+                on CA whitelisting)
+            </td>
+            <td>n/a</td>
+            <td>2007</td>
+            <td>Legalese</td>
+            <td>
+                Background: In 2007, an unnamed competitor owned a critical IP in the area of CA authentication, barring other players from entering this space.
+                Specifically, the idea to using a whitelist to identify trusted CA had been patented, presenting an obstacle to my employer at the time, TrendMicro.<br>
+                <br>
+                As TrendMicro encouraged patent filing, and I had an idea how to work around their problem, I took this opportunity to file my first patent.
+                The solution was simple: Instead of maintaining an explicit CA whitelist, use machine learning to infer a hash function for trusted CAs.
+                This hash function could be deployed in the cloud as a service far removed from physically maintaining an explicit list of trusted CAs, safe from the clutches of the prior patent claimant.<br>
+                <br>
+                The patent was finally published in 2011 after my departure from TrendMicro with me as joint inventer with my ex-colleague Lee Chia.
+                I have heard TrendMicro has made good use of this patent for strategic IP positioning. There are a good number of references as well.
+            </td>
+            <td><a href=https://patentimages.storage.googleapis.com/US7949771B1/US07949771-20110524-D00000.png>screenshot</a></td>
             <td align="center">n/a</td>
         </tr>
     </table>
