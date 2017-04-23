@@ -150,6 +150,11 @@ EXPERIENCE:
   Led team of 4 to design, implement, document 3D racing game in under 6 weeks.
   Coding done on Windows using C++, OpenGL, FMOD.
 
+PATENTS:	 
+  Chen, Jerry Jen-Chih and Li, Chia. 2014. Authentication of unknown parties in secure computer communications. U.S. Patent 8,667,154, filed September 5, 2011, and issued March 4, 2014.
+  Chen, Jerry Jen-Chih and Li, Chia. 2014. Authentication of unknown parties in secure computer communications. U.S. Patent 7,949,771, filed September 5, 2007, and issued May 24, 2011.
+  Source: USPTO database.
+
 PORTFOLIO:
 
   https://sites.google.com/site/onlyuser/projects
@@ -165,6 +170,8 @@ PROJECTS:
   Inverse Kinematics solver (CCD), and platonic primitives generation. Platonic
   primitives supported include sphere, cube, cylinder, cone, grid, tetrahedron,
   and round brilliant diamond.
+  https://github.com/onlyuser/dexvt-test
+  https://github.com/onlyuser/dexvt-lite
 
  2010
 
