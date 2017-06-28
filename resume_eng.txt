@@ -46,9 +46,13 @@ EDUCATION
 
 TECHNICAL SUMMARY:
 
-  C++ (Inc. STL), LexYacc / FlexBison / ANTLR / Boost Spirit, OpenGL, glsl
-  shader, glm, gdb/cgdb, valgrind/kcachegrind, git, make/CMake, CUDA, Graphviz,
-  bash, tcl, Eclipse CDT, Bullet physics, VR
+  C++ (Inc. STL), LexYacc / ANTLR / Boost Spirit, OpenGL, glsl shader, glm,
+  gdb/cgdb, valgrind/kcachegrind, git, make/CMake, CUDA, Graphviz, bash, tcl,
+  Eclipse CDT, Bullet physics, VR
+
+ACTIVELY MAINTAINED:
+
+  C++ (Inc. STL), LexYacc, gdb, make, bash, tcl
 
 LANGUAGES:
 
@@ -182,7 +186,7 @@ PROJECTS:
 
  2010
 
-  Developed FlexBison tutorial on GitHub demonstrating various ways to build a
+  Developed LexYacc tutorial on GitHub demonstrating various ways to build a
   parser.
   https://github.com/onlyuser/XLang
 
