@@ -59,18 +59,17 @@ EXPERIENCE:
  2012 - Present
 
   SYNOPSYS                                                       TAIPEI, TAIWAN
-  Develop EDA (Electronic Design Automation) CAD software as R&D Engineer for
-  DG (Design Group) department, PrimeRail team, that does PG network voltage
-  drop analysis. Owner of IC Compiler's PrimeRail In-Design, the IC Compiler tcl
-  command UI for PrimeRail. Owner of IC Compiler's PrimeRail heat map, an IC
-  Compiler GUI feature to display PrimeRail results. Owner of EM
-  (electromigration) rule to proprietary EM rule translators stem2itf, rvl2itf,
-  ircx2itf, for customers ST, Intel, TSMC. Enhanced PrimeRail's Integrity Check
-  missing-via-check feature by adding an arithmetic expression filter. Ported
-  IC Compiler's physical query (think, layout search engine) commands to
-  PrimeRail. Owner of PrimeRail's runtime/memory/accuracy/regression/build-
-  meister tracking webpage. Coding done on Linux using C/C++. Work with gcc,
-  gdb, tcl, Code-Collaborator, Coverity.
+  Develop EDA (Electronic Design Automation) CAD software that does PG network
+  voltage drop analysis as R&D Engineer for DG (Design Group), IC Compiler
+  team. Owner of IC Compiler's PrimeRail In-Design, the IC Compiler command UI
+  for PrimeRail. Owner of IC Compiler's PrimeRail heat map, an IC Compiler GUI
+  feature to display PrimeRail results. Owner of EM (electromigration) rule to
+  proprietary EM rule translators for customers ST, Intel, TSMC. Enhanced
+  PrimeRail's Integrity Check missing-via-check feature by adding an arithmetic
+  expression filter. Ported IC Compiler's physical query (layout graph-search
+  engine) commands to PrimeRail. Owner of PrimeRail's runtime/memory/accuracy/
+  regression/buildmeister tracking webpage. Coding done on Linux using C/C++.
+  Work with gcc, gdb, tcl, Code-Collaborator, Coverity.
   http://www.synopsys.com/
 
  2010 - 2012
@@ -159,7 +158,7 @@ EXPERIENCE:
   Led team of 4 to design, implement, document 3D racing game in under 6 weeks.
   Coding done on Windows using C++, OpenGL, FMOD.
 
-PATENTS:	 
+PATENTS:
   Chen, Jerry Jen-Chih and Li, Chia. 2014. Authentication of unknown parties in secure computer communications. U.S. Patent 7,949,771, filed September 5, 2007, and issued May 24, 2011.
   Source: USPTO database.
 
