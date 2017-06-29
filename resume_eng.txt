@@ -168,7 +168,7 @@ PATENTS:
 
 PORTFOLIO:
 
-  https://sites.google.com/site/onlyuser/projects
+  http://onlyuser.github.io
 
 PROJECTS:
 
