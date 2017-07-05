@@ -1854,6 +1854,7 @@
             <td>2007</td>
             <td>Legalese</td>
             <td>
+                <!--
                 Background: My employer in 2007, Trend Mirco, had a competitor that patented a popular method of CA authentication, forcing other players to stay out of this space or pay a hefty royalty.
                 Specifically, the competitor patented the use of a whitelist to identify trusted CA, effectively monopolizing the most obvious solution.<br>
                 <br>
@@ -1866,6 +1867,11 @@
                 There have been several citations since.<br>
                 <br>
                 <i>NOTE: "CA" is an abbreviation for <a href=https://en.wikipedia.org/wiki/Certificate_authority>Certificate Authority</a>.</i>
+                -->
+                Authentication of an unknown party in a secure computer communication may be performed even without consulting a public whitelist of trusted parties.
+                A digital certificate from an unknown party not authenticated by a trusted certificate authority may be locally processed to determine if the digital certificate is a trusted, non-trusted, or unknown digital certificate.
+                For example, a model may be created by training a support vector machine to classify a digital certificate. The model may be provided to a computer involved in secure computer communication.
+                The computer may receive an incoming digital certificate, extract fields from the incoming digital certificate, and take a hash of the extracted fields perform input data that may be employed by the model to determine if the incoming digital certificate is a trusted, non-trusted, or unknown digital certificate.
             </td>
             <td><a href=https://patentimages.storage.googleapis.com/US7949771B1/US07949771-20110524-D00000.png>screenshot</a></td>
             <td align="center">n/a</td>
