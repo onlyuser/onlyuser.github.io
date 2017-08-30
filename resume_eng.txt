@@ -65,16 +65,15 @@ EXPERIENCE:
   SYNOPSYS                                                       TAIPEI, TAIWAN
   Develop EDA (Electronic Design Automation) CAD software that does PG network
   voltage drop analysis as R&D Engineer for DG (Design Group), IC Compiler team
-  Owner of IC Compiler's PrimeRail In-Design, the IC Compiler command UI for
-  PrimeRail. Owner of ST, Intel, TSMC's EM (electro-migration) rule to
-  proprietary EM rule translators and rule format specification. Maintained IC
-  Compiler's PrimeRail heat map, an IC Compiler GUI feature to display
-  PrimeRail results. Enhanced PrimeRail's Integrity Check missing-via-check
-  feature by adding an arithmetic expression filter. Ported IC Compiler's
-  physical query (layout graph-search engine) commands to PrimeRail. Maintained
-  PrimeRail's runtime/memory/regression/buildmeister tracking webpage. Coding
-  done on Linux using C/C++. Work with gcc, gdb, tcl, Code-Collaborator,
-  Coverity.
+  Owner of IC Compiler's PrimeRail In-Design command UI for PrimeRail. Owner of
+  ST, Intel, TSMC's EM (electro-migration) rule to proprietary EM rule
+  translators and rule format specification. Maintained/Enhanced IC Compiler's
+  PrimeRail heat map, an IC Compiler GUI feature to display PrimeRail results.
+  Enhanced PrimeRail's Integrity Check missing-via-check feature by adding an
+  expression filter. Ported IC Compiler's physical query (layout graph-search
+  engine) commands to PrimeRail. Maintained/Enhanced PrimeRail's runtime/
+  memory/regression/buildmeister tracking webpage. Coding done on Linux using
+  C/C++. Work with gcc, gdb, tcl, Code-Collaborator, Coverity.
   http://www.synopsys.com/
 
  2010 - 2012
@@ -86,7 +85,7 @@ EXPERIENCE:
   array, map), Doxygen custom language support. Implement PTX parser for LLVM
   compiler backend retooling. Implement GPU space partitioning / event
   scheduling for game service framework. Coding done on Linux using C++, CUDA,
-  ANTLR, Boost Spirit. Work with CUDA Profiler, gcc/nvcc, cgdb, valgrind/
+  ANTLR, Boost Spirit. Worked with CUDA Profiler, gcc/nvcc, cgdb, valgrind/
   kcachegrind, Graphviz, Eclipse CDT, CMake, Doxygen.
   http://www.zillians.com/
 
