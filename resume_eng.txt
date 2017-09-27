@@ -73,7 +73,7 @@ EXPERIENCE:
   expression filter. Ported IC Compiler's physical query (layout graph-search
   engine) commands to PrimeRail. Maintained/Enhanced PrimeRail's runtime/
   memory/regression/buildmeister tracking webpage. Coding done on Linux using
-  C/C++. Work with gcc, gdb, tcl, Code-Collaborator, Coverity.
+  C/C++, LexYacc. Work with gcc, gdb, tcl, Code-Collaborator, Coverity.
   http://www.synopsys.com/
 
  2010 - 2012

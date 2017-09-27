@@ -163,6 +163,7 @@
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Webpage')"     class="tabWidget" id="Webpage"    >Webpage</a></li>
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', '3D Graphics')" class="tabWidget" id="3D Graphics">3D Graphics</a></li>
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'AI')"          class="tabWidget" id="AI"         >AI</a></li>
+        <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'GPGPU')"       class="tabWidget" id="GPGPU"      >GPGPU</a></li>
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Parsers')"     class="tabWidget" id="Parsers"    >Parsers</a></li>
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Misc')"        class="tabWidget" id="Misc"       >Misc</a></li>
         <li><a href="javascript:void(0)" onclick="openTab(event, 'tabWidget', 'tabContent', 'Scripts')"     class="tabWidget" id="Scripts"    >Scripts</a></li>
@@ -227,7 +228,7 @@
             <th>Download</th>
         </tr>
         <tr bgcolor="#F0F0F0">
-            <th align="center" rowspan="2">
+            <th align="center" rowspan="3">
                 3D Graphics<br>
                 <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/graphics_thumb.PNG"/>
             </th>
@@ -517,6 +518,28 @@
             <td>n/a</td>
             <td align="center"><a href=https://github.com/syoyo/MMDLoader/archive/master.zip>zip</a></td>
         </tr>
+        <tr bgcolor="#F0F0F0">
+            <td align="center">
+                <a href=https://github.com/onlyuser/stablefluids>stablefluids</a><br>
+                Fork of <a href=http://finallyjustice.github.io/fluid/>Dongli Zhang's</a>'s excellent<br>Navier-Stokes fluid simulator
+            </td>
+            <td>
+                <table border="0">
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/stablefluids/blob/master/TextureFluid/StableSolver2D.cpp#L235>StableSolver2D.cpp</a></td>
+                        <td>Algorithm kernel</td>
+                    </tr>
+                </table>
+            </td>
+            <td><a href=https://github.com/onlyuser/stablefluids#readme>readme</a></td>
+            <td>n/a</td>
+            <td>
+                <a href=https://travis-ci.org/onlyuser/stablefluids/builds>
+                    <img src="https://travis-ci.org/onlyuser/stablefluids.png?branch=master" alt="Build Status">
+                </a>
+            </td>
+            <td align="center"><a href=https://github.com/onlyuser/stablefluids/archive/master.zip>zip</a></td>
+        </tr>
     </table>
 </div>
 <div class="tabContent" id="AI">
@@ -531,7 +554,7 @@
             <th>Download</th>
         </tr>
         <tr>
-            <th align="center">
+            <th align="center" rowspan="2">
                 AI<br>
                 <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/ai_thumb.PNG"/>
             </th>
@@ -571,6 +594,108 @@
                 </a>
             </td>
             <td align="center"><a href=https://github.com/onlyuser/NatLang/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href=https://github.com/onlyuser/simple-neural-net-example>simple-neural-net-example</a><br>
+                Simple Neural Net Example<br>
+                (new version)<br>
+                <a href=https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg>
+                    <img src="https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg" alt="simple-neural-net-example" width="200" height="*">
+                </a>
+            </td>
+            <td>
+                <table border="0">
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/simple-neural-net-example/blob/master/main.c#L53>main.c</a></td>
+                        <td>
+                            Algorithm kernel<br>
+                            (one training iteration)
+                       </td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/simple-neural-net-example/blob/master/main.c#L5>main.c</a></td>
+                        <td>Transfer function</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/simple-neural-net-example/blob/master/main.c#L10>main.c</a></td>
+                        <td>Reverse transfer function</td>
+                    </tr>
+                </table>
+            </td>
+            <td><a href=https://github.com/onlyuser/simple-neural-net-example#readme>readme</a></td>
+            <td><a href=https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg>screenshot</a></td>
+            <td>
+                <a href=https://travis-ci.org/onlyuser/simple-neural-net-example/builds>
+                    <img src="https://travis-ci.org/onlyuser/simple-neural-net-example.png?branch=master" alt="Build Status">
+                </a>
+            </td>
+            <td align="center"><a href=https://github.com/onlyuser/simple-neural-net-example/archive/master.zip>zip</a></td>
+        </tr>
+    </table>
+</div>
+<div class="tabContent" id="GPGPU">
+    <table border="1">
+        <tr bgcolor="#F0F0F0">
+            <th>Category</th>
+            <th>Project</th>
+            <th>Code Sample</th>
+            <th>Readme</th>
+            <th>Screenshot</th>
+            <th>Build Status</th>
+            <th>Download</th>
+        </tr>
+        <tr>
+            <th align="center" rowspan="2">
+                GPGPU<br>
+                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/gpgpu_thumb.PNG"/>
+            </th>
+            <td align="center">
+                <a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique>dexvt-gpgpu-ping-pong-technique</a><br>
+                GPGPU Ping-pong Technique<br>
+                <a href=https://sites.google.com/site/onlyuser/projects/graphics/images/dexvt-gpgpu-ping-pong-technique_conway.png>
+                    <img src="https://sites.google.com/site/onlyuser/projects/graphics/images/dexvt-gpgpu-ping-pong-technique_conway.png" alt="dexvt-gpgpu-ping-pong-technique" width="200" height="*">
+                </a>
+            </td>
+            <td>
+                <table border="0">
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/main.cpp#L150>main.cpp</a></td>
+                        <td>The elusive ping-pong swap</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/shaders/overlay_conway.f.glsl>overlay_conway.f.glsl</a></td>
+                        <td>Cellular automata shader</td>
+                    </tr>
+                </table>
+            </td>
+            <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique#readme>readme</a></td>
+            <td><a href=https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg>screenshot</a></td>
+            <td>
+                <a href=https://travis-ci.org/onlyuser/dexvt-gpgpu-ping-pong-technique/builds>
+                    <img src="https://travis-ci.org/onlyuser/dexvt-gpgpu-ping-pong-technique.png?branch=master" alt="Build Status">
+                </a>
+            </td>
+            <td align="center"><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/archive/master.zip>zip</a></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href=https://github.com/onlyuser/dexvt-gpgpu-neural-net>dexvt-gpgpu-neural-net</a><br>
+                GPGPU Neural Net<br>
+                (Nothing works. This is a W.I.P.)<br>
+                <a href=https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg>
+                    <img src="https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg" alt="dexvt-gpgpu-neural-net" width="200" height="*">
+                </a>
+            </td>
+            <td>n/a</td>
+            <td><a href=https://github.com/onlyuser/dexvt-gpgpu-neural-net#readme>readme</a></td>
+            <td><a href=https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg>screenshot</a></td>
+            <td>
+                <a href=https://travis-ci.org/onlyuser/dexvt-gpgpu-neural-net/builds>
+                    <img src="https://travis-ci.org/onlyuser/dexvt-gpgpu-neural-net.png?branch=master" alt="Build Status">
+                </a>
+            </td>
+            <td align="center"><a href=https://github.com/onlyuser/dexvt-gpgpu-neural-net/archive/master.zip>zip</a></td>
         </tr>
     </table>
 </div>
@@ -1274,7 +1399,7 @@
             </th>
             <td align="center">
                 <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/N_Net>N_Net</a><br>
-                Neural Network<br>
+                Object Oriented Neural Net<br>
                 <a href=https://sites.google.com/site/onlyuser/projects/ai/images/n-net.PNG>
                     <img src="https://sites.google.com/site/onlyuser/projects/ai/images/n-net.PNG" alt="n-net" width="200" height="*">
                 </a>
@@ -1307,8 +1432,8 @@
         <tr bgcolor="#F0F0F0">
             <td align="center">
                 <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/misc/bpNet>bpNet</a><br>
-                Neural Network<br>
-                (simple example)<br>
+                Simple Neural Net Example<br>
+                (old version)<br>
                 <a href=https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg>
                     <img src="https://sites.google.com/site/onlyuser/files/bpnet_graph.jpg" alt="n-net" width="200" height="*">
                 </a>
