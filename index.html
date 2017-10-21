@@ -520,14 +520,15 @@
         </tr>
         <tr bgcolor="#F0F0F0">
             <td align="center">
-                <a href=https://github.com/onlyuser/stablefluids>stablefluids</a><br>
-                Fork of <a href=http://finallyjustice.github.io/fluid/>Dongli Zhang's</a>'s excellent<br>Navier-Stokes fluid simulator
+                <a href=https://github.com/finallyjustice/stablefluids>stablefluids</a><br>
+                Contributor to <a href=http://finallyjustice.github.io>Dongli Zhang's</a>'s excellent<br>Navier-Stokes fluid simulator<br>
+                (c++/Make)<br>
             </td>
             <td>
                 <table border="0">
                     <tr>
-                        <td><a href=https://github.com/onlyuser/stablefluids/blob/master/TextureFluid/StableSolver2D.cpp#L235>StableSolver2D.cpp</a></td>
-                        <td>Algorithm kernel</td>
+                        <td><a href=https://github.com/finallyjustice/stablefluids/blob/master/TextureFluid/main.cpp#L48>main.cpp</a></td>
+                        <td>Makefile &amp; PNG support (<a href=https://github.com/finallyjustice/stablefluids/commit/a22b0f7594646fffb2f1af77c40041c5db0915ac>commit #1</a>)</td>
                     </tr>
                 </table>
             </td>
@@ -648,24 +649,52 @@
         <tr>
             <th align="center" rowspan="2">
                 GPGPU<br>
-                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/gpgpu_thumb.PNG"/>
+                <img border="0" width="96" height="96" src="https://sites.google.com/site/onlyuser/projects/thumbs/gpgpu_thumb.PNG"/><br>
+                <font color="lightgrey">(The nVidia logo is a<br>registered trademark<br>belonging to nVidia<br>corporation, not me)</font>
             </th>
             <td align="center">
                 <a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique>dexvt-gpgpu-ping-pong-technique</a><br>
                 GPGPU Ping-pong Technique<br>
-                <a href=https://sites.google.com/site/onlyuser/projects/graphics/images/dexvt-gpgpu-ping-pong-technique_conway.png>
-                    <img src="https://sites.google.com/site/onlyuser/projects/graphics/images/dexvt-gpgpu-ping-pong-technique_conway.png" alt="dexvt-gpgpu-ping-pong-technique" width="200" height="*">
+                <br>
+                Conway's Game of Life<br>
+                <a href=https://sites.google.com/site/onlyuser/projects/graphics/images/dexvt-gpgpu_conway.gif?attredirects=0>
+                    <img src="https://sites.google.com/site/onlyuser/projects/graphics/thumbs/dexvt-gpgpu_conway_thumb.gif?attredirects=0" alt="dexvt-gpgpu_conway" width="200" height="*">
+                </a><br>
+                <br>
+                Maze Solver<br>
+                <a href=https://sites.google.com/site/onlyuser/projects/graphics/images/dexvt-gpgpu_maze.gif?attredirects=0>
+                    <img src="https://sites.google.com/site/onlyuser/projects/graphics/thumbs/dexvt-gpgpu_maze_thumb.gif?attredirects=0" alt="dexvt-gpgpu_maze" width="200" height="*">
                 </a>
             </td>
             <td>
                 <table border="0">
                     <tr>
-                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/main.cpp#L150>main.cpp</a></td>
+                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/main_conway.cpp#L197>main_conway.cpp</a></td>
                         <td>The elusive ping-pong swap</td>
                     </tr>
                     <tr>
                         <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/shaders/overlay_conway.f.glsl>overlay_conway.f.glsl</a></td>
-                        <td>Cellular automata shader</td>
+                        <td>Conway's Game of Life shader</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/shaders/overlay_conway_heatmap.f.glsl>overlay_conway_heatmap.f.glsl</a></td>
+                        <td>Conway heatmap shader</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/shaders/overlay_maze_distfield.f.glsl>overlay_maze_distfield.f.glsl</a></td>
+                        <td>Distance field shader</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/shaders/overlay_maze_prune.f.glsl>overlay_maze_prune.f.glsl</a></td>
+                        <td>Maze prune shader</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/shaders/overlay_maze_grow.f.glsl>overlay_maze_grow.f.glsl</a></td>
+                        <td>Maze grow shader</td>
+                    </tr>
+                    <tr>
+                        <td><a href=https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique/blob/master/src/shaders/overlay_maze_heatmap.f.glsl>overlay_maze_heatmap.f.glsl</a></td>
+                        <td>Maze heatmap shader</td>
                     </tr>
                 </table>
             </td>
@@ -738,19 +767,19 @@
                 <center><p><b>Lexer Techniques</b></p></center>
                 <table border="0">
                     <tr>
-                        <td><a href=https://github.com/onlyuser/XLang/blob/master/demos/5_XLang_stdio_c_vexing/src/XLang.l#L92>XLang.l</a></td>
+                        <td><a href=https://github.com/onlyuser/XLang/blob/master/demos/5_XLang_stdio_c_vexing/src/XLang.l#L91>XLang.l</a></td>
                         <td>Parse Scott Meyer's "Most Vexing Parse" using <a href=http://flex.sourceforge.net/manual/Start-Conditions.html>stateful lexing</a></td>
                     </tr>
                     <tr>
-                        <td><a href=https://github.com/onlyuser/XLang/blob/master/demos/5_XLang_stdio_c_preproc/src/XLang.l#L98>XLang.l</a></td>
+                        <td><a href=https://github.com/onlyuser/XLang/blob/master/demos/5_XLang_stdio_c_preproc/src/XLang.l#L97>XLang.l</a></td>
                         <td>Parse C include statements using <a href=http://flex.sourceforge.net/manual/Multiple-Input-Buffers.html>multiple buffers</a></td>
                     </tr>
                     <tr>
-                        <td><a href=https://github.com/onlyuser/XLang/blob/master/demos/5_XLang_stdio_c_preproc/src/XLang.l#L125>XLang.l</a></td>
+                        <td><a href=https://github.com/onlyuser/XLang/blob/master/demos/5_XLang_stdio_c_preproc/src/XLang.l#L124>XLang.l</a></td>
                         <td>Parse C define statements using <a href=http://dinosaur.compilertools.net/flex/flex_9.html>unput</a></td>
                     </tr>
                     <tr>
-                        <td><a href=https://github.com/onlyuser/XLang/blob/master/variations/6_XLang_file-yyin-buf/src/XLang.y#L279>XLang.l</a></td>
+                        <td><a href=https://github.com/onlyuser/XLang/blob/master/variations/6_XLang_file-yyin-buf/src/XLang.y#L278>XLang.l</a></td>
                         <td>Parse an in-memory buffer without re-defining <a href=http://stackoverflow.com/questions/1920604/how-to-make-yy-input-point-to-a-string-rather-than-stdin-in-lex-yacc-solaris>YY_INPUT</a></td>
                     </tr>
                 </table>
@@ -1399,10 +1428,13 @@
             </th>
             <td align="center">
                 <a href=https://github.com/onlyuser/Legacy/tree/master/msvc/N_Net>N_Net</a><br>
-                Object Oriented Neural Net<br>
+                Object Oriented Neural Net
+                <!--
+                <br>
                 <a href=https://sites.google.com/site/onlyuser/projects/ai/images/n-net.PNG>
                     <img src="https://sites.google.com/site/onlyuser/projects/ai/images/n-net.PNG" alt="n-net" width="200" height="*">
                 </a>
+                -->
             </td>
             <td>
                 <table border="0">
@@ -2056,6 +2088,8 @@
                 <br>
                 <i>NOTE: "CA" is an abbreviation for <a href=https://en.wikipedia.org/wiki/Certificate_authority>Certificate Authority</a>.</i>
                 -->
+                My first defensive patent:<br>
+                <br>
                 Authentication of an unknown party in a secure computer communication may be performed even without consulting a public whitelist of trusted parties.
                 A digital certificate from an unknown party not authenticated by a trusted certificate authority may be locally processed to determine if the digital certificate is a trusted, non-trusted, or unknown digital certificate.
                 For example, a model may be created by training a support vector machine to classify a digital certificate. The model may be provided to a computer involved in secure computer communication.
