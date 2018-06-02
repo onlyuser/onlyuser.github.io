@@ -60,17 +60,19 @@ EXPERIENCE:
  2012 - Present
 
   SYNOPSYS                                                       TAIPEI, TAIWAN
-  Develop EDA (Electronic Design Automation) CAD software that does PG network
-  voltage drop analysis as R&D Engineer for DG (Design Group), IC Compiler team
-  Owner of IC Compiler's PrimeRail In-Design command UI for PrimeRail. Owner of
-  ST, Intel, TSMC's EM (electro-migration) rule to proprietary EM rule
-  translators and rule format specification. Maintained/Enhanced IC Compiler's
-  PrimeRail heat map, an IC Compiler GUI feature to display PrimeRail results.
-  Enhanced PrimeRail's Integrity Check missing-via-check feature by adding an
-  expression filter. Ported IC Compiler's physical query (layout graph-search
-  engine) commands to PrimeRail. Maintained/Enhanced PrimeRail's runtime/
-  memory/regression/buildmeister tracking webpage. Coding done on Linux using
-  C/C++, LexYacc. Work with gcc, gdb, tcl, Code-Collaborator, Coverity.
+  Develop EDA (Electronic Design Automation) CAD software for PG network
+  voltage drop analysis as R&D Engineer in IC Compiler team, Design Group.
+  Owner of IC Compiler's RedHawk & PrimeRail In-Design flows, a native UI in IC
+  Compiler to generate scripts and prepare input for RedHawk & PrimeRail. Owner
+  of foundry certification for electromigration rule translation from foundry
+  format "iRCX" to Synopsys proprietary format "ITF-EM". Developed IC
+  Compiler's RedHawk & PrimeRail result "heatmap" GUI display and result query
+  commands. Migrated In-Design flow's backend tool from PrimeRail to RedHawk.
+  Developed an "expression filter" to PrimeRail's PG network integrity missing
+  via check feature. Ported IC Compiler I's layout geometry query commands to
+  PrimeRail. Maintained PrimeRail's performance, memory use, and accuracy
+  monitoring website. Coding done on Linux using C/C++, LexYacc. Work with gcc,
+  gdb, tcl, Code-Collaborator, Coverity.
   http://www.synopsys.com/
 
  2010 - 2012
@@ -89,24 +91,23 @@ EXPERIENCE:
  2008 - 2010
 
   SPRINGSOFT                                               SCIENCE PARK, TAIWAN
-  Developed EDA (Electronic Design Automation) CAD software as Engineer for R&D
-  department, ADP (Analog Design Platform) team. Rewrote from scratch new CDF
-  (Component Description Format) parser to facilitate product migration to
-  OpenAccess. Rewrote aging netlist name parser to support multi-dimension
-  Python-style array slicing, a more powerful syntax for bus expressions. Took
-  charge of integrating SPICE / EDIF / Verilog / AMS import-export flows into
-  product. Maintained legacy EDIF (Electronic Design Interchange Format)
-  parser. Participated in shipping ADP 2.1v3-2.1v5. Coding done on Linux using
-  C++, LexYacc. Worked with gcc, gdb/dbx, Rational Purify, Rational Quantify,
-  Visio.
+  Developed EDA (Electronic Design Automation) CAD software as R&D Engineer in
+  ADP (Analog Design Platform) team. Rewrote from scratch new CDF (Component
+  Description Format) parser to facilitate product migration to OpenAccess.
+  Rewrote aging netlist name parser to support multi-dimension Python-style
+  array slicing, a more powerful syntax for bus expressions. Took charge of
+  integrating SPICE / EDIF / Verilog / AMS import-export flows into product.
+  Maintained legacy EDIF (Electronic Design Interchange Format) parser.
+  Participated in shipping ADP 2.1v3-2.1v5. Coding done on Linux using C++,
+  LexYacc. Worked with gcc, gdb/dbx, Rational Purify, Rational Quantify, Visio.
   http://www.springsoft.com/
 
  2007
 
   TREND MICRO                                                    TAIPEI, TAIWAN
-  Developed antivirus software as Engineer for R&D department, Small-Medium-
-  Business division. Updated communications code in product "CSM OfficeScan"
-  from WinInet to WinHTTP. Collaborated with security architect to conduct
+  Developed antivirus software as R&D Engineer in Small-Medium-Business
+  division. Updated communications code in product "CSM OfficeScan" from
+  WinInet to WinHTTP. Collaborated with security architect to conduct
   OfficeScan network protocol vulnerability survey. Participated in drafting
   new architecture for OfficeScan restructuring. Ported InstallShield code in
   product "SMEX (ScanMail for Exchange Server)" to IIS 6.0 for Windows Server
@@ -138,11 +139,11 @@ EXPERIENCE:
  2004
 
   APEX INTERNATIONAL                                             TAIPEI, TAIWAN
-  Developed financial software as Engineer for R&D department, Derivatives
-  Division. Implemented GUI applet for displaying stock charts, scrolling
-  marquees in derivatives pricing software. Implemented Java servelet for
-  serving XML stock quotations. Coding done on Windows using Java, Spring
-  Framework, C#, GDI+, OpenGL.
+  Developed financial software as R&D Engineer in Derivatives Division.
+  Implemented GUI applet for displaying stock charts, scrolling marquees in
+  derivatives pricing software. Implemented Java servelet for serving XML stock
+  quotations. Coding done on Windows using Java, Spring Framework, C#, GDI+,
+  OpenGL.
   http://www.apex.com.tw/
 
  Spring 2003
@@ -169,7 +170,7 @@ PORTFOLIO:
 
 PROJECTS:
 
- 2014
+ Undated
 
   Developed OpenGL 3D engine with environment-mapped
   reflection/refraction/double refraction (with Fresnel effect, chromatic
@@ -180,6 +181,15 @@ PROJECTS:
   and round brilliant diamond.
   https://github.com/onlyuser/dexvt-test
   https://github.com/onlyuser/dexvt-lite
+
+  Developed bash scripts to generate call graph from elf binary.
+  https://github.com/onlyuser/gen-callgraph
+
+  Developed GLSL-based GPGPU Ping-pong technique demonstration.
+  https://github.com/onlyuser/dexvt-gpgpu-ping-pong-technique
+
+  Developed LexYacc-based English subset parser.
+  https://github.com/onlyuser/parse-english
 
  2010
 
