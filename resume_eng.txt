@@ -172,6 +172,14 @@ PROJECTS:
 
  Undated
 
+  Developed LexYacc-based English parser that parses in parallel all possible
+  interpretations of an English sentence accepted by a grammar and generates
+  abstract syntax trees for successful parses.
+
+  https://github.com/onlyuser/parse-english
+
+ Undated
+
   Developed OpenGL 3D engine with environment-mapped
   reflection/refraction/double refraction (with Fresnel effect, chromatic
   dispersion, and Beer's law), screen space ambient occlusion, bump mapping,
